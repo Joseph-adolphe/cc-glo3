@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../asset/css/fontawesome-free-6.7.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../../../asset/css/admin/index.css">
+    <link rel="stylesheet" href="../../../asset/css/admin/vente.css">
+    <link rel="stylesheet" href="../../../asset/css/admin/couleur.css">
+    <title>Nest</title>
+</head>
+<body>
+    <!-- ....................sidebar...................  -->
+    <aside>
+        <div class="logo">
+            <a href=" ../index.html">
+                <h1>Nest</h1>
+                <p>fruitag & cmo</p>
+            </a>
+        </div>
+        <div class="liens">
+            <div class="menu">
+                <h4>menu</h4>
+                <ul>
+                    <li>
+                        <a href=" ../index.html">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" ../analise.html">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Analises</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" ../vente.html">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ventes</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="management">
+                <h4>management</h4>
+                <ul>
+                    <li>
+                        <a href=" ../client.html">
+                            <i class="fas fa-user"></i>
+                            <span>Clients</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" ../categori.html" style="cursor: pointer;">
+                            <i class="fas fa-folder"></i>
+                            <span>Catégories</span>
+                        </a>
+                        <i class="fas fa-caret-right" id="cat"></i>
+                    </li>
+                    <ul id="list" class="drop">
+                        <li>
+                            <a href=" bijoux.html"><i class="fas fa-award"></i>Fruits</a>
+                        </li>
+                        <li>
+                            <a href="montres.html"><i class="fas fa-carrot"></i>Légumes</a>
+                        </li>
+                        <li class="active">
+                            <a href="sac.html"><i class="fas fa-pepper-hot"></i>Salade de fruit</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href=" ../vendeur.html">
+                            <i class="fas fa-shop"></i>
+                            <span>Vendeurs</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="notification">
+                <h4>notifications</h4>
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-exchange"></i>
+                            <span>Transaction</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" ../message.html">
+                            <i class="fas fa-message"></i>
+                            <span>Message</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- ................fin sidebar...................  -->
+
+    <!-- ..............main principale.................. -->
+    <main>
+        <!-- .....................navbar.................... -->
+        <nav>
+            <div class="search">
+                <input type="search" name="" id="" placeholder="Rechecher">
+            </div>
+            <div class="moon lune">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="moon">
+                <i class="fas fa-bell"></i>
+            </div>
+            <button class="out">
+                <i class="fas fa-right-from-bracket"></i><span>Déconnexion</span>
+            </button>
+        </nav>
+        <!-- .................fin navbar.................... -->
+
+        <div class="navigation">
+            <a href="../index.html">Dashboard</a> / <a href="../categori.html">Catégories</a> / <a href="sac.html" class="active">Sac</a>
+        </div>
+
+        <!-- ...............section principale...............  -->
+        <h2>Liste des produits de la catégorie Salade de fruit</h2>
+        <section>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td style="width: 30%;"><h4>Produit</h4></td>
+                            <td><h4>Date</h4></td>
+                            <td><h4>Clients</h4></td>
+                            <td><h4>prix</h4></td>
+                            <td><h4>statut</h4></td>
+                        </tr>    
+                    </thead>
+                    <tbody id="montableau">
+                        <tr>
+                            <td class="image">
+                                <img src="../../../asset/images/image/fruit/ananas.avif" alt="">Ananas 100g
+                            </td>
+                            <td>
+                                11/12/2024
+                            </td>
+                            <td>
+                                Léa Edwige
+                            </td>
+                            <td>
+                                5000 Fcfa
+                            </td>
+                            <td>
+                                <input type="checkbox" disabled >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="image">
+                                <img src="../../../asset/images/image/fruit/avocat.jpg" alt="">Avocat
+                            </td>
+                            <td>
+                                11/12/2024
+                            </td>
+                            <td>
+                                Léa Edwige
+                            </td>
+                            <td>
+                                5000 Fcfa
+                            </td>
+                            <td>
+                                <input type="checkbox" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="image">
+                                <img src="../../../asset/images/image/fruit/mangue.avif" alt="">Mangue 100g
+                            </td>
+                            <td>
+                                11/12/2024
+                            </td>
+                            <td>
+                                Léa Edwige
+                            </td>
+                            <td>
+                                5000 Fcfa
+                            </td>
+                            <td>
+                                <input type="checkbox" disabled >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="image">
+                                <img src="../../../asset/images/image/fruit/coco.jpg" alt="">Noix de coco
+                            </td>
+                            <td>
+                                11/12/2024
+                            </td>
+                            <td>
+                                Léa Edwige
+                            </td>
+                            <td>
+                                5000 Fcfa
+                            </td>
+                            <td>
+                                <input type="checkbox" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="image">
+                                <img src="../../../asset/images/image/fruit/ackee.jpg" alt="">Ackee
+                            </td>
+                            <td>
+                                11/12/2024
+                            </td>
+                            <td>
+                                Simon Thomas
+                            </td>
+                            <td>
+                                5000 Fcfa
+                            </td>
+                            <td>
+                                <input type="checkbox" checked disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="image">
+                                <img src="../../../asset/images/image/legume/ail.jpg" alt="">Ail 100g
+                            </td>
+                            <td>
+                                11/12/2024
+                            </td>
+                            <td>
+                                Simon Thomas
+                            </td>
+                            <td>
+                                5000 Fcfa
+                            </td>
+                            <td>
+                                <input type="checkbox" checked disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="image">
+                                <img src="../../../asset/images/image/fruit/mangoustan.webp">Mangoustan
+                            </td>
+                            <td>
+                                11/12/2024
+                            </td>
+                            <td>
+                                Simon Thomas
+                            </td>
+                            <td>
+                                5000 Fcfa
+                            </td>
+                            <td>
+                                <input type="checkbox" checked disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="image">
+                                <img src="../../../asset/images/image/fruit/ananas.avif" alt="">Ananas 100g
+                            </td>
+                            <td>
+                                11/12/2024
+                            </td>
+                            <td>
+                                Léa Edwige
+                            </td>
+                            <td>
+                                5000 Fcfa
+                            </td>
+                            <td>
+                                <input type="checkbox" disabled >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="image">
+                                <img src="../../../asset/images/image/fruit/avocat.jpg" alt="">Avocat
+                            </td>
+                            <td>
+                                11/12/2024
+                            </td>
+                            <td>
+                                Léa Edwige
+                            </td>
+                            <td>
+                                5000 Fcfa
+                            </td>
+                            <td>
+                                <input type="checkbox" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="image">
+                                <img src="../../../asset/images/image/fruit/mangue.avif" alt="">Mangue 100g
+                            </td>
+                            <td>
+                                11/12/2024
+                            </td>
+                            <td>
+                                Léa Edwige
+                            </td>
+                            <td>
+                                5000 Fcfa
+                            </td>
+                            <td>
+                                <input type="checkbox" disabled >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="image">
+                                <img src="../../../asset/images/image/fruit/coco.jpg" alt="">Noix de coco
+                            </td>
+                            <td>
+                                11/12/2024
+                            </td>
+                            <td>
+                                Léa Edwige
+                            </td>
+                            <td>
+                                5000 Fcfa
+                            </td>
+                            <td>
+                                <input type="checkbox" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="image">
+                                <img src="../../../asset/images/image/fruit/ackee.jpg" alt="">Ackee
+                            </td>
+                            <td>
+                                11/12/2024
+                            </td>
+                            <td>
+                                Simon Thomas
+                            </td>
+                            <td>
+                                5000 Fcfa
+                            </td>
+                            <td>
+                                <input type="checkbox" checked disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="image">
+                                <img src="../../../asset/images/image/legume/ail.jpg" alt="">Ail 100g
+                            </td>
+                            <td>
+                                11/12/2024
+                            </td>
+                            <td>
+                                Simon Thomas
+                            </td>
+                            <td>
+                                5000 Fcfa
+                            </td>
+                            <td>
+                                <input type="checkbox" checked disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="image">
+                                <img src="../../../asset/images/image/fruit/mangoustan.webp">Mangoustan
+                            </td>
+                            <td>
+                                11/12/2024
+                            </td>
+                            <td>
+                                Simon Thomas
+                            </td>
+                            <td>
+                                5000 Fcfa
+                            </td>
+                            <td>
+                                <input type="checkbox" checked disabled>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- ...............section principale...............  -->
+
+        <!-- ....................footer............................  -->
+        <footer>
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>Nest</h1>
+                    <p>fruitag & cmo</p>
+                </a>
+            </div>
+            <div>
+                <p>Quelque liens</p>
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Produit</a></li>
+                    <li><a href="">Commandes</a></li>
+                    <li><a href="">Messages</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Noos partenaires</p>
+                <ul>
+                    <li><a href="">Cotco</a></li>
+                    <li><a href="">ENSPD</a></li>
+                    <li><a href="">Jumia</a></li>
+                    <li><a href="">Facebook</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Reseaux sociaux</p>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-telegram"></i>
+            </div>
+        </footer>
+        <!-- ....................footer............................  -->
+    </main>
+    <!-- ..............fin main principale.............. -->
+
+
+    <!-- ...................lien javascript...................  -->
+     <script src="../../../asset/js/admin/index.js"></script>
+     <script src="../../../asset/js/admin/vente.js"></script>
+    <!-- ...............fin lien javascript...................  -->
+</body>
+</html>
