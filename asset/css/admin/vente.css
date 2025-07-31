@@ -1,0 +1,39 @@
+section div{
+    width: 100%;
+    overflow-x: auto;
+}
+
+main h2{
+    margin-top: 30px;
+}
+
+section div table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+}
+
+section div table thead{
+    color: black;
+}
+
+section div table td{
+    padding: 15px;
+}
+
+section  table tbody td img{
+    object-fit: contain;
+    width: 20%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+section  table tbody .image{
+    display: flex;
+    align-items: center;
+}
+
+section table .blanc{
+    background-color: rgb(240, 236, 236);
+}

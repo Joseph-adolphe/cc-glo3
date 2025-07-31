@@ -1,0 +1,771 @@
+/* ..............caroussel............ */
+.card .caroussel{
+    border: none;
+    border-radius: 10px;
+    height: 495px;
+    background-color:rgb(196, 228, 213);
+    background-image: url("../../images/caroussel.png");
+    padding-top: 2% ;
+    padding-bottom: 2% ;
+    padding-left:10% ;
+    color: rgb(90, 89, 89);
+    transition: background-color 1s ease-in-out;
+    position: relative;
+}
+
+.card .caroussel.blue{
+    background-color:rgb(210, 218, 170);
+}
+
+.card .caroussel h2{
+    padding-top: 100px;
+    font-size: 70px;
+    text-transform: capitalize;
+    animation: titre 2s ease-in-out;
+}
+
+@keyframes titre {
+    0%{
+        font-size: 30px;
+    }
+    100%{
+        font-size: 70px;
+    }
+}
+
+.card .caroussel p{
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.card .caroussel .input{
+    background-color: white;
+    border-radius: 50px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:30%;
+    
+}
+
+.card .caroussel .input input{
+    border: none;
+    padding-left: 5px;
+}
+
+.card .caroussel .input input:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
+} 
+
+.card .caroussel .input button{
+    background-color:#52c097;
+    color: white;
+    border-radius: 50px;
+    height: 100%;
+    width: 30%;
+    border: none;
+}
+
+.card .caroussel img{
+    position: absolute;
+    width: 50%;
+    bottom: 3px;
+    right: 5px;
+    transition: opacity 1s ease-in-out;
+}
+
+.card .caroussel img.cache{
+    opacity:0;
+}
+
+.card .caroussel .button{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    top: 50%;
+}
+
+.card .caroussel .button button{
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: 0 2px 2px gray;
+    border-radius: 50%;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.card .caroussel .button button:hover{
+    opacity: 1;
+}
+
+/* ..............caroussel............ */
+
+/* ..................future............. */
+.card .future{
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card .future a{
+    text-decoration: none;
+    color: black;
+}
+
+.card .future a >div{
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 4px gray;
+    height: 130px;
+    margin-right: 15px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card .future a >div:hover{
+    transform: scale(1.05);
+}
+
+.card .future a >div img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card .future a >div h4{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.card .future a >div p{
+    text-align: center;
+    font-size: 12px;
+}
+
+.card .future a >div:first-child{
+    background-color: rgb(252, 249, 231);
+}
+
+.card .future a >div:nth-child(2){
+    background-color: rgb(233, 251, 233);
+}
+
+.card .future a >div:last-child{
+    background-color: rgb(252, 237, 227);
+}
+/* ..................future............. */
+
+/* ...............notification................ */
+
+.card .notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .notification div{
+    border: none;
+    border-radius: 10px;
+    height: 200px;
+    width: 32%;
+    padding: 0 2%;
+}
+
+.card .notification div:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card .notification div p{
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    margin-top: 40px;
+    width: 50%;
+    height: 50%;
+}
+
+.card .notification div button{
+    padding: 5px 10px;
+    color: white;
+    background-color: #52c097;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card .notification div button:hover{
+    transform: scale(1.05);
+}
+
+.card .notification div button i{
+    margin-left: 10px;
+}
+
+.card .notification div:first-child{
+    background-color: rgb(252, 218, 195);
+    background-image: url('../../images/fruits.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.card .notification div:nth-child(2){
+    background-color: rgb(233, 251, 233);
+    background-image: url('../../images/legume.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: bottom right;    
+}
+
+.card .notification div:last-child{
+    background-color: rgb(252, 237, 227);
+    background-image: url('../../images/salade.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+/* ...............notification................ */
+
+/* ...............produits................ */
+
+.card .product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card .product .contenu{
+    width: 18%;
+    border: 2px solid rgb(223, 220, 220);
+    border-radius: 10px;
+    padding: 0 15px;
+    height: 390px;
+    margin-bottom: 20px;
+}
+
+.card .product .contenu:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card .product .contenu .image{
+    margin-top: 10px;
+    height: 53%;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+}
+
+.card .product .contenu .image:hover{
+    transform: scale(0.9);
+}
+
+.card .product .contenu .image .show{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #52c097;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.card .product .contenu .image .show a{
+    text-decoration: none;
+}
+
+.card .product .contenu .image .show a button{
+    padding: 5px;
+    color: #52c097;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.card .product .contenu .image:hover .show{
+    opacity: 1;
+}
+
+.card .product .contenu .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card .product .contenu .description h5{
+    font-weight: 100;
+    color: gray;
+    margin: 5px 0;
+}
+
+.card .product .contenu .description h4{
+    margin: 5px 0;
+}
+
+.card .product .contenu .description span{
+    font-size: 12px;
+    color: gold;
+}
+
+
+.card .product .contenu .description> p{
+    font-size: 14px;
+    color:#52c097;
+    margin: 5px 0;
+}
+
+.card .product .contenu .description .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 5px 0;
+}
+
+.card .product .contenu .description .price p:first-child{
+    color: #52c097;
+    font-weight: 700;
+}
+
+.card .product .contenu .description .price p:last-child{
+    color: gray;
+    font-size: 14px;
+}
+
+.card .product .contenu .description button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #52c097;
+    border: none;
+    background-color: #ccfcea;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card .product .contenu .description button:hover{
+    transform: scale(1.05);
+    color: black;
+    cursor: pointer;
+}
+
+/* ...............produits................ */
+
+/* ...............phare................ */
+.card .phare{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .phare .presentation{
+    height: 300px;
+    width: 25%;
+    background-color: #f4f3f4;
+    background-image: url('../../images/legume.png');
+    background-size: 650px;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.card .phare .presentation h3{
+    margin-top: 15%;
+    font-size: 25px;
+}
+
+.card .phare .presentation button{
+    margin-top: 60px;
+    background-color: #52c097;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card .phare .presentation button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card .phare .produits{
+    display: flex;
+    overflow: hidden;
+    width: 70%;
+    justify-content: space-between;
+    padding: 0 2%;
+    position: relative;
+}
+
+.card .phare .produits .contenu{
+    min-width: 33%;
+    margin-left: 1%;
+    border: 2px solid rgb(223, 220, 220);
+    border-radius: 10px;
+    padding: 0 15px;
+    height: 390px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.card .phare .produits .contenu.active{
+    display: block;
+}
+
+
+.card .phare .produits .contenu:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card .phare .produits .contenu .image{
+    height: 53%;
+    margin-top: 10px;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card .phare .produits .contenu .image:hover{
+    transform: scale(0.9);
+}
+
+.card .phare .produits .contenu .image .show{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #52c097;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.card .phare .produits .contenu .image .show a button{
+    padding: 5px;
+    color: #52c097;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.card .phare .produits .contenu .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card .phare .produits .contenu .image:hover .show{
+    opacity: 1;
+}
+
+.card .phare .produits .contenu .description h5{
+    font-weight: 100;
+    color: gray;
+    margin: 5px 0;
+}
+
+.card .phare .produits .contenu .description h4{
+    margin: 5px 0;
+}
+
+.card .phare .produits .contenu .description span{
+    font-size: 12px;
+    color: gold;
+}
+
+.card .phare .produits .contenu .description> p{
+    font-size: 14px;
+    color:#52c097;
+    margin: 5px 0;
+}
+
+.card .phare .produits .contenu .description .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 5px 0;
+}
+
+.card .phare .produits .contenu .description .price p:first-child{
+    color: #52c097;
+    font-weight: 700;
+}
+
+.card .phare .produits .contenu .description .price p:last-child{
+    color: gray;
+    font-size: 14px;
+}
+
+.card .phare .produits .contenu .description button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #52c097;
+    border: none;
+    background-color: #ccfcea;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card .phare .produits .contenu .description button:hover{
+    transform: scale(1.05);
+    color: black;
+    cursor: pointer;
+}
+
+.card .phare .produits .action{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    margin-top: 175px;
+    justify-content: space-between;
+}
+
+.card .phare .produits .action button{
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 3px gray;
+}
+/* ...............phare................ */
+
+/* ...............small................ */
+.card .small{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card .small .article{
+    width: 24%;
+    padding: 2% 0;
+}
+
+.card .small .article .bar{
+    margin-top: 10px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(204, 202, 202);
+    margin-bottom: 30px;
+}
+
+.card .small .article .bar .souligner{
+    width: 30%;
+    height: 100%;
+    background-color: #52c097;
+}
+
+.card .small .article .contient{
+    display: block;
+}
+
+.card .small .article .contient .contenance{
+    display: flex;
+    padding: 5px;
+}
+
+.card .small .article .contient .contenance:hover{
+    border: 2px solid #f4f3f4;
+    border-radius: 5px;
+}
+
+.card .small .article .contient .contenance .image{
+    width: 40%;
+    padding: 5px;
+    height: 80px;
+    background-color: #F2F3F8;
+}
+
+.card .small .article .contient .contenance .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card .small .article .contient .contenance .image img:hover{
+    transform: scale(0.8);
+}
+
+.card .small .article .contient .contenance .description{
+    padding: 5px;
+    font-size: 14px;
+}
+
+.card .small .article .contient .contenance .description h4{
+    margin-bottom: 5px;
+}
+
+.card .small .article .contient .contenance .description span{
+    font-size: 12px;
+    color: gold;
+}
+
+.card .small .article .contient .contenance .description .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 5px;
+    color: gray;
+}
+
+.card .small .article .contient .contenance .description .price p:first-child{
+    color: #52c097;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.card .small .article .contient .contenance .description .price p:last-child{
+    font-size: 12px;
+}
+/* ...............small................ */
+
+/* ...........partie du responsive.......... */
+
+
+@media (max-width:1000px) {
+
+    .card .caroussel h2{
+        font-size: 50px;
+    }
+    .card .caroussel p{
+        font-size: 16px;
+    }    
+    .card .caroussel{
+        height: 400px;
+    }
+    .card .caroussel .input{
+        display: none;
+    }
+    .card .notification div p{
+        font-size: 17px;
+    }
+    .card .product .contenu{
+        width: 23%;
+    }
+    .card .phare{
+        display: block;
+    }
+    .card .phare .presentation{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .card .phare .produits{
+        width: 100%;
+    }
+    .card .small .article{
+        width: 48%;
+    }
+    
+}
+
+@media (max-width:800px) {
+    .card .notification {
+        display: block;
+    }
+    .card .notification div{
+        width: 100%;
+        padding-top: 25px;
+        margin-top:10px ;
+    }
+    .card .notification div p{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width:770px) {
+    .card .title h3{
+        margin-right: 50px;
+    }
+    .card .product .contenu{
+        width: 31%;
+    }
+    .card .phare .presentation{
+        background-size: 550px;
+    }
+}
+
+
+@media (max-width:650px) {
+    .card .notification div{
+        padding-top: 15px;
+    }
+    .card .title h3{
+        margin-right: 20px;
+    }
+    .card .title ul li{
+        margin-right: 15px;
+    }
+    .card .product .contenu{
+        width: 48%;
+    }
+    .card .phare .produits .contenu{
+        width: 48%;
+    }
+    .card .phare .presentation{
+        background-size: 450px;
+    }
+}
+
+@media (max-width:550px) {
+    .card .caroussel h2{
+        font-size: 40px;
+    }
+    .card .caroussel{
+        height: 300px;
+    }
+    .card .title h3{
+        margin-right: 15px;
+    }
+    .card .title ul li{
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    .card .title ul li:last-child{
+        display: none;
+    }
+    .card .phare .presentation{
+        background-size: 350px;
+    }
+    .card .notification div{
+        padding-top: 5px;
+    }
+
+    .card .small .article{
+        width: 100%;
+    }
+
+    .card .phare .produits .contenu{
+        min-width: 49%;
+    }
+}
+
+@media (max-width:450px) {
+    .card .title ul li:nth-last-child(2){
+        display: none;
+    }
+    .card .phare .presentation{
+        background-size: 350px;
+    }
+}
+/* ...........partie du responsive.......... */

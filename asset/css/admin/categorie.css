@@ -1,0 +1,175 @@
+main .titre{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+main .titre button{
+    background-color: #465E9E;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+main .block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .block >div{
+    width: 250px;
+    background-color: white;
+    padding-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 0 3px gray;
+    margin:10px ;
+    height: 350px;
+}
+
+main .block >div .image {
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+main .block >div:hover{
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+main .block >div .image:hover img {
+    transform: scale(0.9);
+}
+
+main .block >div .image img{
+    width: 100%;
+    object-position: center;
+    object-fit: contain;
+    height: 100%;
+}
+
+main .block >div .description{
+    padding-left: 20px;
+    width: 100%;
+    line-height: 1.5em;
+}
+
+main .block >div .description a{
+    color: black;
+    text-decoration: none;
+}
+
+main .block >div .description a:hover{
+    color: #465E9E;
+}
+/* .......................modal d"ajout d'une catégorie.......................  */
+
+.modal{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+}
+
+.modal.active{
+    display: flex;
+}
+
+.modal .modal-cat{
+    background-color: white;
+    width: 400px;
+    position: absolute;
+    top: 60px;
+}
+
+.modal .modal-cat .entete{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.modal .modal-cat .entete button{
+    float: right;
+}
+
+.modal .modal-cat .corps{
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.modal .modal-cat .corps .form-group{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal .modal-cat .corps .form-group label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.modal .modal-cat .corps .form-group input, textarea{
+    display: block;
+    width: 100%;
+    resize: none;
+    padding-left: 10px;
+}
+
+.modal .modal-cat .corps .form-group input[type="text"]{
+    height: 35px;
+}
+
+.modal .modal-cat .corps .form-group textarea{
+    height: 70px;
+}
+
+.modal .modal-cat .pied{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.modal .modal-cat .pied button{
+    padding: 5px 10px;
+}
+
+.modal .modal-cat .pied button:first-child{
+    background-color: #465E9E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* .......................modal d"ajout d'une catégorie.......................  */
+
+/* .................responsive....................  */
+
+@media (max-width:500px) {
+    .modal .modal-cat{
+        background-color: white;
+        width: 60%;
+    }  
+}
+
+@media (min-width:500px) {
+    .modal .modal-cat{
+        background-color: white;
+        width: 450px;
+    }  
+}
+
+/* .................responsive....................  */
+
+/* .................couleur.................  */
+
+
+/* .................couleur.................  */

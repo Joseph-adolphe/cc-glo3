@@ -1,0 +1,23 @@
+table tbody tr td i{
+    font-size: 10px;
+}
+
+table tbody tr td .or{
+    color: gold;
+}
+
+table tbody tr td .argent{
+    color: silver;
+}
+
+table tbody tr td .red{
+    color: red;
+}
+
+table tbody tr td .blue{
+    color: blue;
+}
+
+table tbody tr td .yellow{
+    color: yellow;
+}

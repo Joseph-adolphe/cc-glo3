@@ -1,0 +1,602 @@
+/* .................category............. */
+.card .category{
+    width: 100%;
+    background-color: #e1e3eb;
+    border-radius: 15px;
+    padding: 3%;
+}
+
+.card .category h3{
+    font-size: 2rem;
+}
+
+.card  .category ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card .category ul li a{
+    text-decoration: none;
+    color: black;
+}
+/* .................category............. */
+
+/* .................container............. */
+.card .container{
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+    justify-content: space-between;
+}
+
+/* .................stat............. */
+.card .container .stat{
+    display: block;
+    width: 18%;
+    top: 0;
+}
+
+/* .................catmenu............. */
+.card .container .stat .catmenu{
+    margin-bottom: 20px;
+}
+
+.card .container .stat .catmenu, .filtre{
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+}
+
+.card .container .stat .catmenu h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.card .container .stat .catmenu .line{
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    height: 2px;
+}
+
+.card .container .stat .catmenu .line .souligner{
+    width: 25%;
+    height: 100%;
+    background-color: #52c097;
+}
+
+.card .container .stat .catmenu ul li{
+    list-style: none;
+    border: 1px solid #e1e3eb;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    font-size: 14px;
+}
+
+.card .container .stat .catmenu ul li span{
+    background-color: #e1e3eb;
+    border-radius: 50%;
+    padding: 5px;
+    color: #52c097;
+}
+
+.card .container .stat .filtre h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.card .container .stat .filtre .line{
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    height: 2px;
+}
+
+.card .container .stat .filtre .line .souligner{
+    width: 25%;
+    height: 100%;
+    background-color: #52c097;
+}
+
+.card .container .stat .filtre input{
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+    background-color: #52c097;
+}
+
+.card .container .stat .filtre .prix{
+    font-size: 12px;
+    color: #52c097;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.card .container .stat .filtre h5{
+    font-size: 16px;
+}
+
+.card .container .stat .filtre ul li{
+    list-style-type: circle;
+    margin-left: 20px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.card .container .bodycard{
+    width: 81%;
+}
+
+
+.card .container .bodycard .entete{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-size: 14px;
+    align-items: center;
+}
+
+.card .container .bodycard .entete p span{
+    color: #52c097;
+}
+
+.card .container .bodycard .entete .button input{
+    border: 1px solid #ccfcea;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.card .container .bodycard .entete .button button{
+    padding: 5px;
+    border: #ccfcea;
+    color: #52c097;
+}
+
+.card .container .produits{
+    width: 100%;
+}
+
+/* ...............produits................ */
+
+.card .container .produits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card .container .produits .contenu{
+    width: 18%;
+    border: 2px solid rgb(223, 220, 220);
+    border-radius: 10px;
+    padding: 0 15px;
+    height: 390px;
+    margin-bottom: 20px;
+}
+
+.card .container .produits .contenu:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card .container .produits .contenu .image{
+    margin-top: 10px;
+    height: 53%;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+}
+
+.card .container .produits .contenu .image:hover{
+    transform: scale(0.9);
+}
+
+.card .container .produits .contenu .image .show{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #52c097;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.card .container .produits .contenu .image .show a{
+    text-decoration: none;
+}
+
+.card .container .produits .contenu .image .show a button{
+    padding: 5px;
+    color: #52c097;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.card .container .produits .contenu .image:hover .show{
+    opacity: 1;
+}
+
+.card .container .produits .contenu .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card .container .produits .contenu .description h5{
+    font-weight: 100;
+    color: gray;
+    margin: 5px 0;
+}
+
+.card .container .produits .contenu .description h4{
+    margin: 5px 0;
+}
+
+.card .container .produits .contenu .description span{
+    font-size: 12px;
+    color: gold;
+}
+
+
+.card .container .produits .contenu .description> p{
+    font-size: 14px;
+    color:#52c097;
+    margin: 5px 0;
+}
+
+.card .container .produits .contenu .description .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 5px 0;
+}
+
+.card .container .produits .contenu .description .price p:first-child{
+    color: #52c097;
+    font-weight: 700;
+}
+
+.card .container .produits .contenu .description .price p:last-child{
+    color: gray;
+    font-size: 14px;
+}
+
+.card .container .produits .contenu .description button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #52c097;
+    border: none;
+    background-color: #ccfcea;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card .container .produits .contenu .description button:hover{
+    transform: scale(1.05);
+    color: black;
+    cursor: pointer;
+}
+
+.card .container .produits .barre{
+    position: sticky;
+    bottom: 5px;
+    width: 100%;
+    justify-content: center;
+}
+
+.card .container .produits .barre button{
+    background-color: #52c097;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+}
+
+.card .container .bodycard .pagination{
+    display: flex;
+    justify-content: center;
+}
+
+.card .container .bodycard .pagination button{
+    margin-left: 5px;
+    border: #ccfcea;
+    color: #52c097;
+    padding: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card .container .bodycard .pagination button:hover{
+    color: black;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+/* ...............produits................ */
+
+/* .................catmenu............. */
+
+/* .................stat............. */
+
+/* ..............filtrer par................. */
+.promax{
+    z-index: 2000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.promax.active{
+    display: block;
+}
+
+.promax .iphone{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.promax .iphone .samsung{
+    width: 350px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    height: 250px;
+    padding: 20px;
+    animation: monter 2s ease-in-out;
+}
+
+@keyframes monter {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 250px;
+    }
+}
+
+.promax .iphone .samsung h3{
+    text-align: center;
+}
+
+.promax .iphone .samsung .poly{
+    position: relative;
+}
+
+.promax .iphone .samsung .poly h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.promax .iphone .samsung .poly .line{
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    height: 2px;
+}
+
+.promax .iphone .samsung .poly .line .souligner{
+    width: 25%;
+    height: 100%;
+    background-color: #52c097;
+}
+
+.promax .iphone .samsung .poly input{
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+    background-color: #52c097;
+}
+
+.promax .iphone .samsung .poly .prix{
+    font-size: 12px;
+    color: #52c097;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.promax .iphone .samsung .poly h5{
+    font-size: 16px;
+}
+
+.promax .iphone .samsung .poly ul li{
+    list-style-type: circle;
+    margin-left: 20px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.promax button{
+    background: none;
+    border: none;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* ..............filtrer par................. */
+
+
+/* ...............responsive............... */
+
+@media (max-width:1165px) {
+    
+    .card .container .produits .contenu{
+        width: 24%;
+    }
+
+}
+
+@media (max-width:970px) {
+    
+    .card .container .produits .contenu{
+        width: 32%;
+    }
+
+    .card .container .stat{
+        width: 25%;
+    }
+
+    .card .container .bodycard{
+        width: 74%;
+    }
+
+}
+
+@media (min-width:9px) {
+    .barre{
+        display: none;
+    }
+}
+
+@media (max-width:970px) {
+
+    .card .container .produits .contenu{
+        width: 24%;
+    }
+
+    .barre{
+        display: flex;
+    }
+
+    .card .container .stat{
+        display: none;
+    }
+
+    .card .container .bodycard{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:800px) {
+    .card .notification {
+        display: block;
+    }
+    .card .notification div{
+        width: 100%;
+        padding-top: 25px;
+        margin-top:10px ;
+    }
+    .card .notification div p{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width:770px) {
+    .card .title h3{
+        margin-right: 50px;
+    }
+    .card .product .contenu{
+        width: 31%;
+    }
+    .card .phare .presentation{
+        background-size: 550px;
+    }
+}
+
+@media (max-width:700px) {
+
+    .card .container .produits .contenu{
+        width: 32%;
+    }
+
+}
+
+
+@media (max-width:650px) {
+    .card .notification div{
+        padding-top: 15px;
+    }
+    .card .title h3{
+        margin-right: 20px;
+    }
+    .card .title ul li{
+        margin-right: 15px;
+    }
+    .card .product .contenu{
+        width: 48%;
+    }
+    .card .phare .produits .contenu{
+        width: 48%;
+    }
+    .card .phare .presentation{
+        background-size: 450px;
+    }
+}
+
+@media (max-width:550px) {
+    .card .caroussel h2{
+        font-size: 40px;
+    }
+    .card .caroussel{
+        height: 300px;
+    }
+    .card .title h3{
+        margin-right: 15px;
+    }
+    .card .title ul li{
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    .card .title ul li:last-child{
+        display: none;
+    }
+    .card .phare .presentation{
+        background-size: 350px;
+    }
+    .card .notification div{
+        padding-top: 5px;
+    }
+
+    .card .small .article{
+        width: 100%;
+    }
+
+    .card .container .produits .contenu{
+        width: 49%;
+    }
+
+    .card .container .bodycard .entete .button input{
+        width: 100px;
+    }
+}
+
+@media (max-width:450px) {
+    .card .title ul li:nth-last-child(2){
+        display: none;
+    }
+    .card .phare .presentation{
+        background-size: 350px;
+    }
+
+    .card .container .bodycard .entete p{
+        display: none;
+    }
+}
+/* ...........partie du responsive.......... */
+
+/* ...............responsive................. */
