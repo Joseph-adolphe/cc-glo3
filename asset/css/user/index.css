@@ -1,0 +1,864 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ................navbar..................... */
+
+nav{
+    border: 3px solid #f4f3f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
+    width: 100%;
+    position: relative;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+
+nav .logo a{
+    text-decoration: none;
+    color: black;
+}
+
+nav .logo h2{
+    color: #52c097;
+    font-size: 40px;
+}
+
+nav .logo p{
+    font-size: 13px;
+    margin-top: -10px;
+}
+
+nav .search{
+    border: 2px solid #f4f3f4;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+nav .search .select{
+    border:none;
+    border-right: 1px solid gray;
+    background: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+nav .search .select .cat{
+    position: absolute;
+    background-color: white;
+    width: auto;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    z-index: 400;
+    display: none;
+}
+
+nav .search .select .cat.active{
+    display: block;
+}
+
+nav .search .select .cat input{
+    border: 1px solid gray;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+nav .search .select .cat ul li{
+    list-style: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+nav .search .select .cat ul li a{
+    color: gray;
+    text-decoration: none;
+}
+
+nav .search input{
+    height: 30px;
+    border: none;
+    padding-left: 10px;
+    width: 500px;
+    font-size: 15px;
+}
+
+nav .search input:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+nav .search input::placeholder{
+    color: gray;
+}
+
+nav .search i{
+    color: gray;
+}
+
+nav .icons{
+    font-size: 15px;
+}
+
+nav .icons a{
+    text-decoration: none;
+    margin-left: 15px;
+    color: black;
+}
+
+nav .icons a:hover{
+    color: #52c097;
+}
+
+nav .icons a button{
+    border: none;
+    background: none;
+}
+
+@media (min-width:1000px) {
+    nav .icons a button{
+        display: none;
+    }
+}
+
+nav .icons a i{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+nav .icons sup{
+    color: white;
+    background-color: #52c097;
+    padding: 2px 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 22px;
+    margin-left: -10px;
+    font-size: 10px;
+}
+
+nav .icons i:first-child{
+    margin-left: 0;
+}
+
+/* ................navbar..................... */
+
+
+/* ....................menu................. */
+
+.menu{
+    border-bottom: 3px solid #f4f3f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.menu .select{
+    background-color: #52c097;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.menu .select i{
+    color: white;
+    margin-right: 10px;
+}
+
+.menu .select select{
+    background: none;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+    text-transform: capitalize;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul li a.active{
+    text-decoration: underline;
+    color: #52c097;
+    text-underline-offset: 5px;
+}
+
+.menu .contact{
+    display: flex;
+    align-items: center;
+}
+
+.menu .contact i{
+    font-size: 30px;
+    color: #52c097;
+    margin-right: 15px;
+}
+
+.menu .contact div h3{
+    color: #52c097;
+}
+
+.menu .contact div p{
+    font-size: 13px;
+}
+
+.menu .legumes, .fruit, .boutique{
+    position: absolute;
+    background-color: white;
+    width: auto;
+    margin-top: 27px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    display: none;
+}
+
+.menu .legumes.active{
+    display: block;
+}
+
+.menu .legumes ul li{
+    list-style: none;
+    display: block;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.menu .legumes ul li a{
+    color: gray;
+    text-decoration: none;
+}
+
+.menu .fruit ul li{
+    list-style: none;
+    display: block;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.menu .fruit ul li a{
+    color: gray;
+    text-decoration: none;
+}
+
+
+.menu .fruit.active{
+    display: block;
+}
+
+.menu .boutique.active{
+    display: block;
+    width: 160px;
+}
+
+.menu .boutique ul li{
+    list-style: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.menu .boutique ul li a{
+    color: gray;
+    text-decoration: none;
+}
+
+.menu .cat{
+    display: none;
+}
+/* ....................menu................. */
+
+/* .................card.............. */
+.card{
+    padding: 2%;
+}
+/* .................card.............. */
+
+
+.card > h3{
+    margin: 20px 0;
+}
+
+
+/* ...............titre................ */
+
+.card .title{
+    display: flex;
+    align-items: end;
+    margin: 20px 0;
+}
+
+.card .title h3{
+    margin-right: 100px;
+}
+
+.card .title ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.card .title ul li a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease-in-out;
+    padding-bottom: 5px;
+}
+
+.card .title ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #52c097;
+    transition: width 0.3s ease-in-out;
+}
+
+.card .title ul li a:hover{
+    color: #52c097;
+}
+
+.card .title ul li a:hover::after{
+    width: 100%;
+}
+
+/* ...............titre................ */
+
+
+/* ...............conclusion................ */
+.card .conclusion{
+    height: 250px;
+    width: 100%;
+    background-color: #ccfcea;
+    border-radius: 20px;
+    padding: 20px 80px;
+    margin-top: 10px;
+    background-image: url('../../images/legume.png');
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.card .conclusion .element{
+    width: 50%;
+}
+
+.card .conclusion .element h2{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card .conclusion .element p{
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.card .conclusion .input{
+    background-color: white;
+    border-radius: 50px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:30%;
+    
+}
+
+.card .conclusion .input input{
+    border: none;
+    padding-left: 5px;
+}
+
+.card .conclusion .input input:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
+} 
+
+.card .conclusion .input button{
+    background-color:#52c097;
+    color: white;
+    border-radius: 50px;
+    height: 100%;
+    width: 30%;
+    border: none;
+}
+/* ...............conclusion................ */
+
+/* ...............order................ */
+.card .order{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.card .order .liens{
+    width: 18%;
+    background-color: #F2F3F8;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card .order .liens:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transform: scale(0.9);
+}
+
+.card .order .liens .image{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.card .order .liens .image img{
+    width: 100%;
+}
+
+.card .order .text{
+    padding-left: 10px;
+}
+
+.card .order .text p{
+    margin-top: 5px;
+    color: gray;
+    font-size: 14px;
+}
+
+/* ...............order................ */
+
+/* ...............footer................ */
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+footer> div{
+    display: block;
+    font-size: 14px;
+}
+
+footer> div h3{
+    font-size: 35px;
+    color: #52c097;
+}
+
+footer> div .subri{
+    font-size: 10px;
+    margin-top: -8px;
+    margin-bottom: 20px;
+}
+
+footer div h4{
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+footer div ul li{
+    list-style-type: none;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+footer div ul li i{
+    color: #52c097;
+    margin-right: 10px;
+}
+
+.card .footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card .footer div:first-child{
+    font-size: 12px;
+    color: gray;
+}
+
+.card .footer >div:nth-child(2){
+    display: flex;
+    align-items: center;
+}
+
+.card .footer >div:nth-child(2) p{
+    font-size: 12px;
+    color: gray;
+}
+
+.card .footer >div:nth-child(3){
+    display: flex;
+    align-items: center;
+}
+
+.card .footer >div:nth-child(3) p{
+    font-size: 12px;
+    color: gray;
+}
+
+.card .footer div .ico{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #52c097;
+}
+
+.card .footer div h4{
+    color: #52c097;
+}
+
+.card .footer div:last-child{
+    color: gray;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.card .footer div:last-child i{
+    background-color: #52c097;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    padding: 4px;
+}
+/* ...............footer................ */
+
+/* ..............modal se connecter...........  */
+.connexion{
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    justify-content: center;
+    display: none;
+}
+
+.connexion.active{
+    display: flex;
+}
+
+.connexion .card-connexion{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    height: 220px;
+    margin-top: 300px;
+    position: relative;
+}
+
+.connexion .card-connexion p{
+    color: rgb(24, 24, 24);
+    text-align: center;
+    margin-top:20px;
+    font-size: 14;
+}
+
+.connexion .button{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    background-color: #52c097;
+    border: none;
+}
+
+.connexion .button:first-child{
+    margin-top: 20px;
+}
+
+.connexion .close{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    padding: 3px;
+    border: none;
+    background: none;
+    font-size: 16px;
+}
+/* ..............modal se connecter...........  */
+
+
+/* .................sidebar................ */
+.sidebar{
+    position: fixed;
+    z-index: 700;
+    width: 150px;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.sidebar.active{
+    display: block;
+}
+
+.sidebar .liens{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 20px;
+}
+
+.sidebar  h4{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: #52c097;
+}
+
+.sidebar ul li{
+    margin-left: 20px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar .indiv{
+    padding-top: 10px;
+}
+
+#fermer_sidebar{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 3px;
+    background: none;
+    border: none;
+}
+
+@keyframes translation {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 200px;
+    }
+}
+/* .................sidebar................ */
+
+
+/* ...........partie du responsive.......... */
+@media (max-width:1250px) {
+    nav .search input{
+        width: 400px;
+    }
+}
+
+@media (max-width:1180px) {
+    .menu .contact{
+        display: none;
+    }
+}
+
+@media (max-width:1130px) {
+    nav .search input{
+        width: 300px;
+    }
+}
+
+@media (max-width:1050px) {
+    nav .icons a span{
+        display: none;
+    }
+    .card .order .liens{
+        width: 23%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:1000px) {
+    .menu{
+        display: none;
+    }
+    .card .conclusion .input{
+        display: none;
+    }
+    .card .conclusion{
+        padding: 20px 60px;
+    }
+    .card .order .liens{
+        width: 33%;
+    }
+    .card .footer div:nth-child(3){
+        display: none;
+    }
+    .card .footer div:nth-child(2){
+        display: none;
+    }
+    
+}
+
+@media (max-width:825px) {
+    nav .search input{
+        width: 250px;
+    }
+}
+
+@media (max-width:800px) {
+    nav .search .select{
+        display: none;
+    }
+    nav .search input{
+        width: 400px;
+    }
+}
+
+@media (max-width:770px) {
+    nav .search .select{
+        display: none;
+    }
+    nav .search input{
+        width: 300px;
+    }
+    .card .title h3{
+        margin-right: 50px;
+    }
+    .card .conclusion .element h2{
+        font-size: 25px;
+    }
+    .card .conclusion .element p{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }.card .conclusion{
+        height: 200px;
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width:700px) {
+    
+    .card .conclusion .element h2{
+        font-size: 23px;
+    }
+    .card .conclusion .element{
+        width: 65%;
+    }
+    .card .order .liens{
+        width: 48%;
+    }
+}
+
+@media (max-width:650px) {
+    nav .icons a:first-child{
+        display: none;
+    }
+    nav .icons a:nth-child(2){
+        display: none;
+    }
+    .card .title h3{
+        margin-right: 20px;
+    }
+    .card .title ul li{
+        margin-right: 15px;
+    }
+}
+
+@media (max-width:550px) {
+    nav .search input{
+        width: 250px;
+    }
+    .card .title h3{
+        margin-right: 15px;
+    }
+    .card .title ul li{
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    .card .title ul li:last-child{
+        display: none;
+    }
+
+    nav .logo h2{
+        color: #52c097;
+        font-size: 25px;
+    }
+    nav .logo p{
+        font-size: 9px;
+        margin-top: -10px;
+    }
+    .card .conclusion .element h2{
+        font-size: 20px;
+    }
+    .card .conclusion{
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width:470px) {
+    nav .search input{
+        width: 130px;
+    }
+}
+
+@media (max-width:450px) {
+
+    nav .logo h2{
+        color: #52c097;
+        font-size: 20px;
+    }
+    .card .title ul li:nth-last-child(2){
+        display: none;
+    }
+    .card .conclusion .element h2{
+        font-size: 18px;
+    }
+    .card .conclusion .element{
+        width: 75%;
+    }
+}
+
+@media (max-width:375px) {
+    nav .logo h2{
+        color: #52c097;
+        font-size: 25px;
+    }
+    nav .logo p{
+        font-size: 9px;
+        margin-top: -8px;
+    }
+}
+/* ...........partie du responsive.......... */

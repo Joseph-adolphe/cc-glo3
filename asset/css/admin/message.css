@@ -1,0 +1,43 @@
+main .block{
+    display: block;
+}
+
+main .block .comm{
+    width: 100%;
+    border: none;
+    margin:10px ;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main .block .comm .text{
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+}
+
+main .block .comm .text .image{
+    width: 80px;
+    object-fit: contain;
+    margin: 5px;
+    margin-right: 20px;
+}
+
+main .block .comm .text .image img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+main .block .comm .text .star i{
+    float: right;
+}
+
+main .block .comm .text .star i:first-child{
+    margin-left: 20px;
+}
+
+main .block .comm .text .star .yellow{
+    color: gold;
+}

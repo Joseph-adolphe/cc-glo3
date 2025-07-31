@@ -1,0 +1,440 @@
+/* .................element principale............. */
+
+section .container{
+    width: 70%;
+}
+
+/* ...................block.......................  */
+
+section .container .block .gauche, .droite, .enbas{
+    width: 31%;
+}
+
+section .container .block .gauche div {
+    background-color: #FFFFFA;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 0 3px gray;
+    margin-bottom: 20px;
+}
+
+section .container .block .droite div {
+    background-color: #FFFFFA;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 0 3px gray;
+    margin-bottom: 20px;
+}
+
+section .container .block .enbas div {
+    background-color: #FFFFFA;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 0 3px gray;
+    margin-bottom: 20px;
+}
+
+section .container .block div i{
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: white;
+}
+
+section .container .block div .vendue{
+    background-color: orangered;
+}
+
+section .container .block div .vente{
+    background-color: skyblue;
+}
+
+section .container .block div .client{
+    background-color: darkolivegreen;
+}
+
+section .container .block div .produit{
+    background-color: #232E42;
+}
+
+section .container .block div .depense{
+    background-color: coral;
+}
+
+section .container .block div .prix{
+    color: orangered;
+}
+
+section .container .block div h4, p, h2{
+    margin:10px auto;
+}
+
+section .container .block div p{
+   color: gray;
+}
+
+/* ...............fin block.......................  */
+
+/* ...............Graph de vente.............../..  */
+
+section .container .myChart, .commande{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;   
+    overflow-x: auto;
+}
+
+section .container .myChart div{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .container .myChart div button{
+    padding: 5px 10px;
+}
+
+/* .............fin Graph de vente................  */
+
+/* ...............commandes..................  */
+
+section .container .commande .titre{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .container .commande .titre a{
+    text-decoration: none;
+    color: gray;
+}
+
+section .container .commande table{
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+}
+
+section .container .commande table thead{
+    background-color: white;
+    color: black;
+}
+
+section .container .commande table td{
+    padding: 10px;
+}
+
+section .container .commande table tbody td img{
+    object-fit: contain;
+    width: 25%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+section .container .commande table tbody .image{
+    display: flex;
+    align-items: center;
+}
+
+section .container .commande table tbody tr{
+    border-bottom: 1px solid rgb(207, 203, 203);
+}
+
+section .container .commande table tbody .noir{
+    background-color: rgb(240, 236, 236);
+}
+
+section .container .commande table tbody  tr td:first-child{
+    color:gray;
+}
+
+section .container .commande table tbody  tr td:nth-last-child(2){
+    color:orangered;
+}
+
+section .container .commande table  tr td:last-child{
+    text-align: center;
+}
+
+
+/* .............fin commandes................  */
+
+/* .............fin element principale............. */
+
+/* ...............petite partie................  */
+section article{
+    margin-left: 20px;
+    width: 28%;
+}
+
+/* .................block.................  */
+section article .block{
+    background-color: #FFFFFA;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 0 3px gray;
+}
+
+section article .block >div{
+    display: flex;
+    justify-content: space-around;
+}
+
+section article .block div .stat{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section article .block div .stat i{
+    font-size: 20px;
+    padding: 15px 18px;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    margin-right: 10px;
+}
+/* .................block.................  */
+
+
+/* .................benefice.................  */
+section article .benefice{
+    background-color: #F87F64;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+}
+/* .................benefice.................  */
+
+/* .................etoile.................  */
+section article .article{
+    background-color: #FFFFFA;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+section article .article .div{
+    margin-top: 10px;
+    background-color: #EFF3FC;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+section article .article .div i{
+    color: blue;
+}
+
+section article .article h5{
+    margin-top: 20px;
+    text-align: center;
+    color: gray;
+}
+
+section article .article .div i:last-child{
+    color: rgb(194, 191, 191);
+}
+
+section article .article .details{
+    margin-top: 20px;
+}
+
+section article .article .details >div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section article .article .details div> div{
+    width:50%;
+    background-color: rgb(194, 191, 191);;
+    height: 5px;
+    border-radius: 5px;
+}
+
+section article .article .details .etoile5{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+}
+
+section article .article .details .etoile4{
+    height: 100%;
+    width: 80%;
+    background-color: blue;
+}
+
+section article .article .details .etoile3{
+    height: 100%;
+    width: 60%;
+    background-color: blue;
+}
+
+section article .article .details .etoile2{
+    height: 100%;
+    width: 40%;
+    background-color: blue;
+}
+
+section article .article .details .etoile1{
+    height: 100%;
+    width: 20%;
+    background-color: blue;
+}
+/* .................etoile.................  */
+
+/* ...................produit................  */
+section article .liste{
+    background-color: #FFFFFA;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+} 
+
+section article .liste .titre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section article .liste .titre a{
+    text-decoration: none;
+    color: gray;
+}
+
+section article .liste table{
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+section article .liste table thead{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+}
+
+section article .liste table td{
+    padding: 10px;
+}
+
+section article .liste table tbody td:first-child{
+    display: flex;
+    align-items: center;
+}
+
+section article .liste table tbody td img{
+    width: 20%;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+section article .liste table tbody .blanc{
+    background-color: #EFF3FC;
+}
+/* ...................produit................  */
+
+/* ...............petite partie................  */
+
+/* ..............fin conteneur..................... */
+
+/* .....................responsive....................  */
+
+@media (max-width:950px) {
+    section{
+        display: block;
+    }
+
+    section .container{
+        width: 100%;
+    }
+
+    section article{
+        margin-top: 20px;
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    section .container .block{
+        display: block;
+    }
+
+    section .container .block .droite{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    section .container .block .gauche{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    section .container .block .droite div{
+        width: 45%;
+    }
+
+    section .container .block .gauche div{
+        width: 45%;
+    }
+
+    section .container .block .enbas{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    section .container .block .enbas div{
+        width: 48%;
+    }
+}
+
+@media (min-width:950px) {
+
+    section .container .block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+/* .....................responsive....................  */

@@ -1,0 +1,122 @@
+.card .contacter h3{
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-color: #52c097;
+    text-underline-offset: 10px;
+}
+
+.card  .experience{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding: 0 60px;
+}
+
+.card .experience .gauche{
+    width: 20%;
+}
+
+.card .experience .gauche .haut{
+    margin-bottom: 80px;
+}
+
+.card .experience .gauche .haut ul li{
+    margin-bottom: 40px;
+    list-style: none;
+    color: gray;
+}
+
+
+.card .experience .gauche .bas ul li{
+    margin-bottom: 40px;
+    list-style: none;
+    color: gray;
+}
+
+.card .experience .droite{
+    width: 79%;
+}
+
+.card .experience .droite .haut{
+    margin-bottom: 60px;
+}
+
+.card .experience .droite .haut div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card .experience .droite .haut div p{
+    margin-right: 20px;
+    color: gray;
+}
+
+.card .experience .droite .haut div input{
+    height: 40px;
+    width: 90%;
+    padding-left: 20px;
+}
+
+.card .experience .droite .bas{
+    display: flex;
+    justify-content: end;
+}
+
+.card .experience .droite .bas textarea{
+    width: 90%;
+    resize: none;
+    height: 130px;
+    padding: 20px;
+}
+
+.card .experience i{
+    margin-right: 10px;
+}
+
+/* ............partie du responsive........  */
+@media (max-width:1170px) {
+    .card .experience .droite .haut div input{
+        width: 80%;
+    }
+}
+
+@media (max-width:850px) {
+    .card .experience .gauche{
+        width: 30%;
+    }
+    .card .experience .droite{
+        width: 69%;
+    }
+}
+
+@media (max-width:750px) {
+
+    .card .contacter h3{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .card .experience{
+        flex-direction: column-reverse;
+    }
+    .card .experience .gauche{
+        width: 100%;
+    }
+    .card .experience .gauche .haut{
+       display: none;
+    }
+    .card .experience .gauche .bas{
+       margin-top: 40px;
+     }
+    .card .experience .droite{
+        width: 100%;
+    }
+    .card .experience .droite .haut div p{
+        display: none;
+    }
+    .card .experience .droite .haut div input{
+        width: 100%;
+    }
+}
+/* ............partie du responsive........  */

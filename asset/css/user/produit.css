@@ -1,0 +1,597 @@
+/* .................schemin..............  */
+.schemin{
+    padding: 20px 40px;
+    border-bottom:2px solid #f4f3f4;;
+}
+
+.schemin ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.schemin ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #52c097;
+}
+
+.schemin ul li .black{
+    color: black;
+}
+
+/* .................schemin..............  */
+
+
+/* .....................produit...............  */
+
+.card .produit{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5%;
+    height: 450px;
+}
+
+.card .produit .image{
+    width: 40%;
+}
+
+.card .produit .image .principale{
+    padding: 5%;
+    height: 75%;
+}
+
+.card .produit .image .principale img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    
+}
+
+.card .produit .image .secondaire{
+    margin-bottom: 20px;
+    height: 25%;
+}
+
+.card .produit .image .secondaire div{
+    width: 25%;
+    height: 50px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.card .produit .image .secondaire div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card .produit .description{
+    width: 59%;
+    padding: 20px;
+}
+
+.card .produit .description h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card .produit .description span i{
+    font-size: 12px;
+    color: gold;
+}
+
+.card .produit .description span .comment{
+    color: gray;
+    text-transform: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.card .produit .description .prix{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.card .produit .description .prix h2{
+    color: #52c097;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.card .produit .description .prix .promo .yellow{
+    font-size: 12px;
+    color: gold;
+}
+
+.card .produit .description .prix .promo p{
+    font-size: 14px;
+    color: gray;
+}
+
+.card .produit .description .text{
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.card .produit .description .ajouter button:first-child{
+    padding: 15px 25px;
+    color: white;
+    background-color: #52c097;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card .produit .description .ajouter button:first-child:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    color: black;
+}
+
+.card .produit .description .ajouter button:first-child i{
+    margin-right: 10px;
+}
+
+.card .produit .description .ajouter button:last-child{
+    padding: 15px;
+    color: #52c097;
+    border: 1px solid #f4f3f4;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.card .produit .description .ajouter button:last-child:hover{
+    color: white;
+    background-color: #52c097;
+}
+
+/* .....................produit...............  */
+
+/* .................rate..............  */
+.card .rate{
+    padding: 0 70px;
+}
+
+.card .rate .box{
+    border: 1.5px solid rgba(0,0,0,0.2);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.card .rate .box .direct button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    border: none;
+    color: gray;
+}
+
+.card .rate .box .direct button:hover{
+    color: #52c097;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.card .rate .box .descript{
+    display: none;
+}
+
+.card .rate .box .commentaire{
+    display: none;
+}
+
+.card .rate .box .descript.active{
+    margin: 20px 0;
+    display: block;
+    color: gray;
+}
+
+.card .rate .box .commentaire.active{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(90, 89, 89);
+}
+
+.card .rate .box .commentaire .input{
+    width: 60%;
+}
+
+.card .rate .box .commentaire .input h4{
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.card .rate .box .commentaire .input h5{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.card .rate .box .commentaire .input textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1.5px solid #f4f3f4;
+    padding: 20px;
+}
+
+.card .rate .box .commentaire .input input{
+    width: 50%;
+    height: 30px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1.5px solid #f4f3f4;
+}
+
+.card .rate .box .commentaire .input button{
+    padding: 15px 15px;
+    display: block;
+    color: white;
+    background-color: #52c097;
+    border: none;
+    border-radius: 5px;
+}
+.card .rate .box .commentaire .review{
+    width: 39%;
+}
+
+.card .rate .box .commentaire .review h5{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.card .rate .box .commentaire .review span{
+    font-size: 12px;
+}
+
+.card .rate .box .commentaire .review span i{
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.card .rate .box .commentaire .review .pourcentage .etoile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+.card .rate .box .commentaire .review .pourcentage .etoile .ligne{
+    width: 80%;
+    margin-right: 15px;
+    height: 10px;
+    background-color: gray;
+}
+
+.card .rate .box .commentaire .review .pourcentage .etoile .ligne div{
+    height: 100%;
+    background-color: #52c097;
+    text-align: center;
+    font-size: 10px;
+    color: black;
+}
+
+.card .rate .box .commentaire .review .pourcentage .etoile .ligne .ligne1{
+    width: 75%;
+}
+
+.card .rate .box .commentaire .review .pourcentage .etoile .ligne .ligne2{
+    width: 50%;
+}
+
+.card .rate .box .commentaire .review .pourcentage .etoile .ligne .ligne3{
+    width: 55%;
+}
+
+.card .rate .box .commentaire .review .pourcentage .etoile .ligne .ligne4{
+    width: 33%;
+}
+
+.card .rate .box .commentaire .review .pourcentage .etoile .ligne .ligne5{
+    width: 27%;
+}
+/* .................rate..............  */
+
+/* ...............produits................ */
+
+.card .product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card .product .contenu{
+    width: 18%;
+    border: 2px solid rgb(223, 220, 220);
+    border-radius: 10px;
+    padding: 0 15px;
+    height: 390px;
+    margin-bottom: 20px;
+}
+
+.card .product .contenu:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card .product .contenu .image{
+    margin-top: 10px;
+    height: 53%;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+}
+
+.card .product .contenu .image:hover{
+    transform: scale(0.9);
+}
+
+.card .product .contenu .image .show{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #52c097;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.card .product .contenu .image .show a{
+    text-decoration: none;
+}
+
+.card .product .contenu .image .show a button{
+    padding: 5px;
+    color: #52c097;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.card .product .contenu .image:hover .show{
+    opacity: 1;
+}
+
+.card .product .contenu .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card .product .contenu .description h5{
+    font-weight: 100;
+    color: gray;
+    margin: 5px 0;
+}
+
+.card .product .contenu .description h4{
+    margin: 5px 0;
+}
+
+.card .product .contenu .description span{
+    font-size: 12px;
+    color: gold;
+}
+
+
+.card .product .contenu .description> p{
+    font-size: 14px;
+    color:#52c097;
+    margin: 5px 0;
+}
+
+.card .product .contenu .description .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 5px 0;
+}
+
+.card .product .contenu .description .price p:first-child{
+    color: #52c097;
+    font-weight: 700;
+}
+
+.card .product .contenu .description .price p:last-child{
+    color: gray;
+    font-size: 14px;
+}
+
+.card .product .contenu .description button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #52c097;
+    border: none;
+    background-color: #ccfcea;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card .product .contenu .description button:hover{
+    transform: scale(1.05);
+    color: black;
+    cursor: pointer;
+}
+
+/* ...............produits................ */
+
+/* ..............responsive............  */
+@media (max-width:700px) {
+    .card .produit .description .text{
+        font-size: 12px;
+    }
+    .card .produit .description .prix h2{
+        font-size: 23px;
+    }
+    .card .produit .description{
+        width: 59%;
+        padding: 10px;
+    }
+    
+    .card .produit .description h3{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .card .produit .description .ajouter button:first-child{
+        padding: 5px 15px;
+    }
+    .card .produit .description .ajouter button:last-child{
+        padding: 5px;
+    }
+    .card .rate .box .commentaire.active{
+        flex-direction: column;
+    }
+    .card .rate .box .commentaire.active>div{
+        width: 100%;
+    }
+    .card .rate .box .commentaire .input button{
+        padding: 5px 5px;
+    }
+    .card .rate .box .direct button{
+        padding: 1px 5px;
+        margin-left: 5px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1000px) {
+
+    .card .caroussel h2{
+        font-size: 50px;
+    }
+    .card .caroussel p{
+        font-size: 16px;
+    }    
+    .card .caroussel{
+        height: 400px;
+    }
+    .card .caroussel .input{
+        display: none;
+    }
+    .card .notification div p{
+        font-size: 17px;
+    }
+    .card .product .contenu{
+        width: 23%;
+    }
+    .card .phare{
+        display: block;
+    }
+    .card .phare .presentation{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .card .phare .produits{
+        width: 100%;
+    }
+    .card .small .article{
+        width: 48%;
+    }
+    
+}
+
+@media (max-width:800px) {
+    .card .notification {
+        display: block;
+    }
+    .card .notification div{
+        width: 100%;
+        padding-top: 25px;
+        margin-top:10px ;
+    }
+    .card .notification div p{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width:770px) {
+    .card .title h3{
+        margin-right: 50px;
+    }
+    .card .product .contenu{
+        width: 31%;
+    }
+    .card .phare .presentation{
+        background-size: 550px;
+    }
+}
+
+
+@media (max-width:650px) {
+    .card .notification div{
+        padding-top: 15px;
+    }
+    .card .title h3{
+        margin-right: 20px;
+    }
+    .card .title ul li{
+        margin-right: 15px;
+    }
+    .card .product .contenu{
+        width: 48%;
+    }
+    .card .phare .produits .contenu{
+        width: 48%;
+    }
+    .card .phare .presentation{
+        background-size: 450px;
+    }
+}
+
+@media (max-width:550px) {
+    .card .caroussel h2{
+        font-size: 40px;
+    }
+    .card .caroussel{
+        height: 300px;
+    }
+    .card .title h3{
+        margin-right: 15px;
+    }
+    .card .title ul li{
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    .card .title ul li:last-child{
+        display: none;
+    }
+    .card .phare .presentation{
+        background-size: 350px;
+    }
+    .card .notification div{
+        padding-top: 5px;
+    }
+
+    .card .small .article{
+        width: 100%;
+    }
+}
+
+@media (max-width:450px) {
+    .card .title ul li:nth-last-child(2){
+        display: none;
+    }
+    .card .phare .presentation{
+        background-size: 350px;
+    }
+}
+/* ..............responsive............  */

@@ -1,0 +1,371 @@
+/* ................theme des couleurs................ */
+
+    /* couleur sidebar: #465E9E;
+    couleur container: #F5F5FD;
+    coleur des inputs: #EFF3FC;
+    couleur des cadres oranges: #F87F64; */
+
+/* ............fin theme des couleurs................ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* .....................sidebar...................  */
+aside{
+    height: 100%;
+    background-color: #232E42;
+    position: fixed;
+    overflow-y: auto;
+    z-index: 4;
+}
+
+aside .logo{
+    margin-bottom: 30px;
+}
+
+aside .logo a{
+    text-decoration: none;
+}
+
+aside .logo a h1{
+    font-size: 40px;
+    color: #52c097;
+}
+
+aside .logo a p{
+    font-size: 8px;
+    color: white;
+    margin-top: -8px;
+}
+
+aside div{
+    margin-top: 20px;
+}
+
+aside ul li{
+    list-style: none;
+    padding: 10px 10px;
+    margin-top: 5px;
+}
+
+aside ul li a{
+    text-decoration: none;
+    color: #ACBAEB;
+}
+
+aside ul li button{
+    background: none;
+    border: none;
+    color: #ACBAEB;
+}
+
+aside ul li a:hover{
+    color: white;
+}
+
+aside ul ul{
+    margin-left: 20px;
+}
+
+aside ul .drop{
+    display: none;
+
+}
+
+aside ul .drop.voir{
+    display: block;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(10);
+    opacity: 1;
+}
+
+aside ul li:hover{
+    background-color: rgb(75, 107, 161) ;
+    border-radius: 5px;
+    border: none;
+}
+
+aside ul .active{
+    color: white;
+    background-color: rgb(75, 107, 161) ;
+    border-radius: 5px;
+    border: none;
+}
+
+aside ul .active a{
+    color: white;
+}
+
+aside ul li i{
+    margin-right: 5px;
+}
+
+
+aside h4{
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+#cat {
+    color: #ACBAEB;
+    margin-left: 5px;
+}
+/* .................fin sidebar...................  */
+
+main{
+    padding: 40px 20px;
+    background-color: #F3F5F8;
+    float: right;
+    padding-bottom: 0;
+}
+
+/* .....................navbar....................  */
+
+main  nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main  nav .search{
+    width: 60%;
+}
+
+main nav .search input{
+    width: 100%;
+    height: 44px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    color: gray;
+    padding-left: 10%;
+}
+
+main nav .moon i{
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+}
+
+main nav .out{
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+main nav .out i{
+    margin-right: 10px;
+    color: red;
+}
+
+/* .................fin navbar....................  */
+
+main .navigation{
+    margin: 20px ;
+}
+
+main .navigation a{
+    text-decoration: none;
+    color: black;
+}
+
+main .navigation a.active{
+    color: #465E9E;
+}
+
+/* ..................conteneur..................... */
+
+section{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+
+
+/* ...................footer........................ */
+main footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #232E42;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .logo a{
+    text-decoration: none;
+}
+
+footer .logo a h1{
+    font-size: 40px;
+    color: #52c097;
+}
+
+footer .logo a p{
+    font-size: 8px;
+    color: white;
+    margin-top: -8px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer i{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.defilement{
+    text-align: right;
+}
+
+.defilement button{
+    padding: 5px 10px;
+    margin-right: 10px;
+    color: white;
+    background-color: #465E9E;
+    border: none;
+    border-radius: 5px;
+}
+/* ...................footer........................ */
+
+/* ...............................responsive......................  */
+
+@media (min-width:970px) {
+    
+
+    aside{
+        width: 16%;
+        padding: 20px 20px;
+    }
+
+    main{
+        width: 84%;
+    }
+    
+}
+
+@media (max-width:970px) {
+    aside .logo{
+        display: none;
+    }
+    footer .logo a h1{
+        font-size: 20px;
+    }   
+}
+
+@media (max-width:710px) {
+    
+    nav .out span{
+        display: none;
+    }
+}
+
+@media (max-width:510px) {
+    
+    nav .lune {
+        display: none;
+    }
+}
+
+@media (max-width:850px) {
+
+    footer .logo{
+        width: 25%;
+        display: flex;
+        align-items: center;
+    }
+    
+    footer img{
+        width: 70%;
+    }
+
+}
+
+@media (max-width:550px) {
+
+    footer{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width:970px) {
+    aside ul li span{
+        display: none;
+    }
+
+    aside div h4{
+        display: none;
+    }
+
+    aside.active ul li span{
+        display: block;
+    }
+    aside.active ul, h4{
+        margin-left: 10px;
+    }
+
+    aside.active ul li a{
+        display: flex;
+        align-items: center;
+    }
+
+    aside.active div h4{
+        display: block;
+    }
+
+    aside.active{
+        width: 30%;
+        overflow: hidden;
+        animation: aside 1s ease-in-out;
+    }
+
+    aside{
+        width: 9%;
+        padding: 20px 0.5%;
+    }
+    main{
+        width: 91%;
+    }
+}
+
+/* ...............................responsive......................  */
+
+/* .............................animation.......................  */
+
+@keyframes aside {
+    0%{
+        width: 9%;
+    }
+
+    100%{
+        width: 30%;
+    }
+}
+
+/* .............................animation.......................  */
