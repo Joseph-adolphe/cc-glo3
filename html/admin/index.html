@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../asset/css/fontawesome-free-6.7.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../../asset/css/admin/index.css">
+    <link rel="stylesheet" href="../../asset/css/admin/dashboard.css">
+    <title>Nest</title>
+</head>
+<body>
+    <!-- ....................sidebar...................  -->
+    <aside>
+        <div class="logo">
+            <a href="index.html">
+                <h1>Nest</h1>
+                <p>fruitag & cmo</p>
+            </a>
+        </div>
+        <div class="liens">
+            <div class="menu">
+                <h4>menu</h4>
+                <ul>
+                    <li class="active">
+                        <a href="">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/admin/analise.html">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Analises</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/admin/vente.html">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ventes</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="management">
+                <h4>management</h4>
+                <ul>
+                    <li>
+                        <a href="../../html/admin/client.html">
+                            <i class="fas fa-user"></i>
+                            <span>Clients</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/admin/categori.html" style="cursor: pointer;">
+                            <i class="fas fa-folder"></i>
+                            <span>Catégories</span>
+                        </a>
+                        <i class="fas fa-caret-right" id="cat"></i>
+                    </li>
+                    <ul id="list" class="drop">
+                        <li>
+                            <a href="../../html/admin/categorie/bijoux.html"><i class="fas fa-award"></i>Fruits</a>
+                        </li>
+                        <li>
+                            <a href="../../html/admin/categorie/montres.html"><i class="fas fa-carrot"></i>Légumes</a>
+                        </li>
+                        <li>
+                            <a href="../../html/admin/categorie/sac.html"><i class="fas fa-pepper-hot"></i>Salade de fruit</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="../../html/admin/vendeur.html">
+                            <i class="fas fa-shop"></i>
+                            <span>Vendeurs</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="notification">
+                <h4>notifications</h4>
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-exchange"></i>
+                            <span>Transaction</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/admin/message.html">
+                            <i class="fas fa-message"></i>
+                            <span>Message</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- ................fin sidebar...................  -->
+
+    <!-- ..............main principale.................. -->
+    <main>
+        <!-- .....................navbar.................... -->
+        <nav>
+            <div class="search">
+                <input type="search" name="" id="" placeholder="Rechecher">
+            </div>
+            <div class="moon lune">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="moon">
+                <i class="fas fa-bell"></i>
+            </div>
+            <button class="out">
+                <i class="fas fa-right-from-bracket"></i><span>Déconnexion</span>
+            </button>
+        </nav>
+        <!-- .................fin navbar.................... -->
+
+        <!-- ...............section principale...............  -->
+        <div class="navigation">
+            <a href="index.html" class="active">Dashboard</a>
+        </div>
+
+        <section>
+
+            <div class="container">
+
+                <!-- .....................block..............  -->
+                <div class="block">
+                    <div class="gauche">
+                        <div>
+                            <i class="fas fa-shopping-cart vendue"></i>
+                            <h4>Total vendues</h4>
+                            <p>8000 de plus</p>
+                            <h2 class="prix">4850000 Fcfa</h2>
+                        </div>
+                        <div>
+                            <i class="fas fa-calendar vente"></i>
+                            <h4>vente hebdo</h4>
+                            <p>50 de plus</p>
+                            <h2>280000 Fcfa</h2>
+                        </div>
+                    </div>
+                    <div class="droite">
+                        <div>
+                            <i class="fas fa-users client"></i>
+                            <h4>Clients</h4>
+                            <p>200 de nouveau</p>
+                            <h2>167500</h2>
+                        </div>
+                        <div>
+                            <i class="fas fa-folder produit"></i>
+                            <h4>Produits</h4>
+                            <p>120 produits</p>
+                            <h2>4500</h2>
+                        </div>
+                    </div>
+                    <div class="enbas">
+                        <div>
+                            <i class="fas fa-money-bill-alt depense"></i>
+                            <h4>Dépenses</h4>
+                            <p>Moins pour ce mois</p>
+                            <h2>55000 Fcfa</h2>
+                        </div>
+                        <div>
+                            <i class="fas fa-user depense"></i>
+                            <h4>Employés</h4>
+                            <p>Moins pour ce mois</p>
+                            <h2>5</h2>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- .................fin block..............  -->
+
+                <!-- ...........Graph de vente annuelle...... -->
+                 <div class="myChart">
+                    <div class="title">
+                        <h3>Vente annuelle</h3>
+                        <button id="masquer">Masquer</button>
+                    </div>
+                    <canvas id="myChart"></canvas>
+                 </div>
+                
+                <!-- .........fin Graph de vente annuelle.... -->
+
+                <!-- .................tableau des commandes en attentes...........  -->
+                 <div class="commande">
+                    <div class="titre">
+                        <h3>Dernière commande</h3>
+                        <a href="../../html/admin/vente.html">Voir tous</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td style="width: 30%;"><h4>Produit</h4></td>
+                                <td><h4>Date</h4></td>
+                                <td><h4>Client</h4></td>
+                                <td><h4>prix</h4></td>
+                                <td><h4>statut</h4></td>
+                            </tr>    
+                        </thead>
+                        <tbody id="montableau">
+                            <tr>
+                                <td class="image">
+                                    <img src="../../asset/images/image/fruit/ananas.avif" alt="">Ananas
+                                </td>
+                                <td>
+                                    11/12/2024
+                                </td>
+                                <td>
+                                    Léa Edwige
+                                </td>
+                                <td>
+                                    5000 Fcfa
+                                </td>
+                                <td>
+                                    <input type="checkbox" disabled >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="image">
+                                    <img src="../../asset/images/image/legume/carrote.jpg" alt=""> carottes
+                                </td>
+                                <td>
+                                    11/12/2024
+                                </td>
+                                <td>
+                                    Lée Edwige
+                                </td>
+                                <td>
+                                    500 Fcfa
+                                </td>
+                                <td>
+                                    <input type="checkbox" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="image">
+                                    <img src="../../asset/images/image/legume/laitue.jpg" alt=""> laitue
+                                </td>
+                                <td>
+                                    11/12/2024
+                                </td>
+                                <td>
+                                    Léa Edwige
+                                </td>
+                                <td>
+                                    2000 Fcfa
+                                </td>
+                                <td>
+                                    <input type="checkbox" checked disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="image">
+                                    <img src="../../asset/images/image/fruit/banane.jpg" alt="">Banane
+                                </td>
+                                <td>
+                                    11/12/2024
+                                </td>
+                                <td>
+                                    Joseph
+                                </td>
+                                <td>
+                                    600 Fcfa
+                                </td>
+                                <td>
+                                    <input type="checkbox" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="image">
+                                    <img src="../../asset/images/image/salade/salade 8.png" alt="">Salade de fruit
+                                </td>
+                                <td>
+                                    11/12/2024
+                                </td>
+                                <td>
+                                    Thomas Edson
+                                </td>
+                                <td>
+                                    500 Fcfa
+                                </td>
+                                <td>
+                                    <input type="checkbox" checked disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="image">
+                                    <img src="../../asset/images/image/salade/salade 4.jpeg" alt="">Salade de fruit
+                                </td>
+                                <td>
+                                    11/12/2024
+                                </td>
+                                <td>
+                                    Karis Déborah
+                                </td>
+                                <td>
+                                    3000 Fcfa
+                                </td>
+                                <td>
+                                    <input type="checkbox" checked disabled>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                 </div>
+                <!-- ...............fin tableau des commandes en attentes.........  -->
+
+            </div>
+
+            <!-- ..........................petite partie................  -->
+
+            <article>
+                <!-- ...................block article.................  -->
+                <div class="block">
+                    <h3>Catégories de client</h3>
+                    <div>
+                        <div  class="stat">
+                            <i class="fas fa-mars"></i>
+                            <div>
+                                <p>Masculin</p>
+                                <h3>40%</h3>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-venus"></i>
+                            <div>
+                                <p>Feminin</p>
+                                <h3>60%</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ...................block article.................  -->
+
+                <!-- ........................benefice......................  -->
+                <div class="benefice">
+                    <h2>4000450 Fcfa</h2>
+                    <p>Compte personnel</p>
+                </div>
+                <!-- ........................benefice......................  -->
+
+                <!-- .....................etoile.......................  -->
+                <div class="article">
+                    <h3>Notation des produits</h3>
+                    <div class="div">
+                        <div>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div>4 sur 5</div>
+                    </div>
+                    <h5>Voir les détails</h5>
+                    <div class="details">
+                        <div>
+                            <p>5 étoiles</p>
+                            <div>
+                                <div class="etoile5"></div>
+                            </div>
+                            <p>50%</p>
+                        </div>
+                        <div>
+                            <p>4 étoiles</p>
+                            <div>
+                                <div class="etoile4"></div>
+                            </div>
+                            <p>40%</p>
+                        </div>
+                        <div>
+                            <p>3 étoiles</p>
+                            <div>
+                                <div class="etoile3"></div>
+                            </div>
+                            <p>30%</p>
+                        </div>
+                        <div>
+                            <p>2 étoiles</p>
+                            <div>
+                                <div class="etoile2"></div>
+                            </div>
+                            <p>20%</p>
+                        </div>
+                        <div>
+                            <p>1 étoile</p>
+                            <div>
+                                <div class="etoile1"></div>
+                            </div>
+                            <p>10%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- .....................etoile.......................  -->
+
+                <!-- ......................liste des produits....................  -->
+                <div class="liste">
+                    <div class="titre">
+                        <h3>Produit les plus vendus</h3>
+                        <a href="../../html/admin/vente.html">Voir tous</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Nom</td>
+                                <td>Prix</td>
+                            </tr>
+                        </thead>
+                        <tbody id="montableau2">
+                            <tr>
+                                <td><img src="../../asset/images/image/fruit/ananas.avif" alt="">Ananas 100g</td>
+                                <td>2500 Fcfa</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../asset/images/image/fruit/avocat.jpg" alt="">Avocat 100g</td>
+                                <td>1000 Fcfa</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../asset/images/image/salade/salade 8.png" alt="">Salade de fruit</td>
+                                <td>300 Fcfa</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../asset/images/image/legume/oignon.jpg" alt="">Oignon 100g</td>
+                                <td>2500 Fcfa</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../asset/images/image/legume/laitue.jpg" alt="">Laitue 10g</td>
+                                <td>750 Fcfa</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../asset/images/image/fruit/mangue.avif" alt="">Mangue 100g</td>
+                                <td>5000 Fcfa</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- ......................liste des produits....................  -->
+                
+            </article>
+
+            <!-- ......................fin petite partie................  -->
+
+        </section>
+        <!-- ...............section principale...............  -->
+
+        <!-- ....................footer............................  -->
+         <footer>
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Nest</h1>
+                    <p>fruitag & cmo</p>
+                </a>
+            </div>
+            <div>
+                <p>Quelque liens</p>
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Produit</a></li>
+                    <li><a href="">Commandes</a></li>
+                    <li><a href="">Messages</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Noos partenaires</p>
+                <ul>
+                    <li><a href="">Cotco</a></li>
+                    <li><a href="">ENSPD</a></li>
+                    <li><a href="">Jumia</a></li>
+                    <li><a href="">Facebook</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Reseaux sociaux</p>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-telegram"></i>
+            </div>
+         </footer>
+        <!-- ....................footer............................  -->
+
+    </main>
+    <!-- ..............fin main principale.............. -->
+
+    <!-- ...................lien javascript...................  -->
+     <script src="../../asset/js/chart.js/Chart.min.js"></script>
+     <script src="../../asset/js/admin/index.js"></script>
+     <script src="../../asset/js/admin/dashboard.js"></script>
+    <!-- ...............fin lien javascript...................  -->
+</body>
+</html>
