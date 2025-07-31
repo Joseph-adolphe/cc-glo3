@@ -1,0 +1,1175 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/fontawesome-free-6.7.1-web/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/user/index.css">
+    <link rel="stylesheet" href="asset/css/user/home.css">
+    <title>Nest</title>
+</head>
+<body>
+  <nav>
+
+    <div class="logo">
+      <a href="index.html">
+        <h2>Nest</h2>
+        <p>fruitag & cmo</p>
+      </a>
+    </div>
+
+    <div class="search">
+      <div class="select">
+        Tous les catégories
+        <i class="fa fa-caret-down" id="cat" aria-hidden="true"></i>
+        <div class="cat" >
+          <input type="text">
+          <ul>
+            <li><a href="html/users/legume.html">Légumes</a></li>
+            <li><a href="html/users/fruits.html">Fruits</a></li>
+            <li><a href="html/users/salade.html">Salade de fruits</a></li>
+          </ul>
+        </div>
+      </div>
+      <input type="text" placeholder="rechercher....">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+
+    <div class="icons">
+      <a href=""><i class="fas fa-random    "></i><sup>3</sup><span>Compare</span></a>
+      <a href=""><i class="far fa-heart"></i><sup>3</sup><span>Favoris</span></a>
+      <a href="html/users/panier.html"><i class="fas fa-shopping-cart"></i><sup>3</sup><span>Panier</span></a>
+      <a id="open_sidebar"><button><i class="fas fa-bars"></i></button></a>
+      <a ><i class="far fa-user" id="conect"></i><span>Compte</span></a>
+    </div>
+
+  </nav>
+
+  <div class="menu">
+    <div class="select">
+      <i class="fas fa-bars"></i>
+      <select name="" id="">
+        <option value="">Tout les catégories</option>
+      </select>
+    </div>
+    <ul>
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="html/users/fruits.html">Fruits</a> <i class="fa fa-caret-down" id="drop_fruit" aria-hidden="true"></i>
+        <div class="fruit">
+          <ul>
+            <li><a href="html/users/fruisfrais.html">Tropicaux</a></li>
+            <li><a href="html/users/fruisfrais.html">à noyau</a></li>
+            <li><a href="html/users/fruisfrais.html">à pépins</a></li>
+            <li><a href="html/users/fruisfrais.html">à chair tendre</a></li>
+            <li><a href="html/users/fruisfrais.html">exotiques</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="html/users/legume.html">Légumes</a> <i class="fa fa-caret-down" id="drop_legume" aria-hidden="true"></i>
+        <div class="legumes">
+          <ul>
+            <li><a href="html/users/legume_feuilles.html">feuilles</a></li>
+            <li><a href="html/users/legume_feuilles.html">racines</a></li>
+            <li><a href="html/users/legume_feuilles.html">tiges</a></li>
+            <li><a href="html/users/legume_feuilles.html">fruits</a></li>
+            <li><a href="html/users/legume_feuilles.html">décoratifs</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="html/users/propos.html">à propos</a></li>
+      <li>boutique <i class="fa fa-caret-down" id="boutique" aria-hidden="true"></i>
+        <div class="boutique">
+          <ul>
+            <li><a href="html/users/legume.html">Légumes</a></li>
+            <li><a href="html/users/fruits.html">Fruits</a></li>
+            <li><a href="html/users/salade.html">Salade de fruit</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="html/users/blog.html">blog</a></li>
+      <li><a href="html/users/contact.html">contact</a></li>
+    </ul>
+    <div class="contact">
+      <i class="fa fa-headphones" aria-hidden="true"></i>
+      <div>
+        <h3>+237 659194047</h3>
+        <p>24/7 Service client</p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="card">
+    <div class="caroussel" id="carrousel">
+      <h2>Légumes frais <br>
+        Grosse remise
+      </h2>
+      <p>Inscrivez-vous pour recevoir des nouvelles</p>
+      <div class="input">
+        <input type="text" placeholder="Votre adresse email">
+        <button>subscrire</button>
+      </div>
+      <img class="limage" src="asset/images/legume.png" alt="">
+      <div class="button">
+        <button id="gauche"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+        <button id="droite"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+
+    <h3>Futures catégories</h3>
+
+    <div class="future">
+      <a href="html/users/fruits.html">
+        <div>
+          <img src="asset/images/fruits.png" alt="">
+          <h4>Fruits</h4>
+          <p>32 articles</p>
+        </div>
+      </a>
+      <a href="html/users/legume.html">
+        <div>
+          <img src="asset/images/legume.png" alt="">
+          <h4>Légumes</h4>
+          <p>32 articles</p>
+        </div>
+      </a>
+      <a href="html/users/salade.html">
+        <div>
+          <img src="asset/images/salade.png" alt="">
+          <h4>Salade</h4>
+          <p>10 articles</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="notification">
+      <div>
+        <p>Vivez chaque jour frais et propre avec nos produits</p>
+        <button>Acheter maintenant <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+      </div>
+      <div>
+        <p>Démarrez votre journée avec un petit-déjeuner sain et facile</p>
+        <button>Acheter maintenant <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+      </div>
+      <div>
+        <p>Les meilleurs produits bio en ligne</p>
+        <button>Acheter maintenant <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+
+    <div class="title">
+      <h3>Produits populaires</h3>
+      <ul>
+        <li><a href="exotique.html">Fruits exotiques</a></li>
+        <li><a href="salade.html">salades</a></li>
+        <li><a href="decoratif.html">legumes décoratifs</a></li>
+      </ul>
+    </div>
+
+    <div class="product">
+      <div class="contenu">
+        <div class="image">
+          <img src="asset/images/image/fruit/ackee.jpg" alt="">
+          <div class="show">
+            <a href=""><button><i class="far fa-heart"></i></button></a>
+            <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+          </div>
+        </div>
+        <div class="description">
+          <h4>Ackee </h4>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </span>
+          <p>Chine</p>
+          <div class="price">
+            <p>2000Fcfa</p>
+            <p><s>3000Fcfa</s></p>
+          </div>
+          <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+        </div>
+      </div>
+      <div class="contenu">
+        <div class="image">
+          <img src="asset/images/image/legume/artichaut.jpg" alt="">
+          <div class="show">
+            <a href=""><button><i class="far fa-heart"></i></button></a>
+            <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+          </div>
+        </div>
+        <div class="description">
+          <h4>Artichaut 1g</h4>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </span>
+          <p>Itali</p>
+          <div class="price">
+            <p>2000Fcfa</p>
+            <p><s>3000Fcfa</s></p>
+          </div>
+          <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+        </div>
+      </div>
+      <div class="contenu">
+        <div class="image">
+          <img src="asset/images/image/legume/asperge.jpg" alt="">
+          <div class="show">
+            <a href=""><button><i class="far fa-heart"></i></button></a>
+            <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+          </div>
+        </div>
+        <div class="description">
+          <h4>Asperge 1g</h4>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </span>
+          <p>Cameroun</p>
+          <div class="price">
+            <p>500Fcfa</p>
+            <p><s>600Fcfa</s></p>
+          </div>
+          <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+        </div>
+      </div>
+      <div class="contenu">
+        <div class="image">
+          <img src="asset/images/image/legume/beterave.jpg">
+          <div class="show">
+            <a href=""><button><i class="far fa-heart"></i></button></a>
+            <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+          </div>
+        </div>
+        <div class="description">
+          <h4>Beterave 1g</h4>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </span>
+          <p>Cameroun</p>
+          <div class="price">
+            <p>1000Fcfa</p>
+            <p><s>3000Fcfa</s></p>
+          </div>
+          <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+        </div>
+      </div>
+      <div class="contenu">
+        <div class="image">
+          <img src="asset/images/image/fruit/ananas.avif">
+          <div class="show">
+            <a href=""><button><i class="far fa-heart"></i></button></a>
+            <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+          </div>
+        </div>
+        <div class="description">
+          <h4>Ananas 1g</h4>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </span>
+          <p>Cameroun</p>
+          <div class="price">
+            <p>2000Fcfa</p>
+            <p><s>3000Fcfa</s></p>
+          </div>
+          <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+        </div>
+      </div>
+      <div class="contenu">
+        <div class="image">
+          <img src="asset/images/image/salade/salade 7.jpg" alt="">
+          <div class="show">
+            <a href=""><button><i class="far fa-heart"></i></button></a>
+            <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+          </div>
+        </div>
+        <div class="description">
+          <h4>Salade de fruit au raisin</h4>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </span>
+          <p>France</p>
+          <div class="price">
+            <p>2000Fcfa</p>
+            <p><s>2500Fcfa</s></p>
+          </div>
+          <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+        </div>
+      </div>
+      <div class="contenu">
+        <div class="image">
+          <img src="asset/images/image/fruit/banane.jpg">
+          <div class="show">
+            <a href=""><button><i class="far fa-heart"></i></button></a>
+            <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+          </div>
+        </div>
+        <div class="description">
+          <h4>Banane 1g</h4>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </span>
+          <p>Cameroun</p>
+          <div class="price">
+            <p>200Fcfa</p>
+            <p><s>250Fcfa</s></p>
+          </div>
+          <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+        </div>
+      </div>
+      <div class="contenu">
+        <div class="image">
+          <img src="asset/images/image/fruit/durian.jpg" alt="">
+          <div class="show">
+            <a href=""><button><i class="far fa-heart"></i></button></a>
+            <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+          </div>
+        </div>
+        <div class="description">
+          <h4>Durian 1g</h4>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </span>
+          <p>Congo</p>
+          <div class="price">
+            <p>2000Fcfa</p>
+            <p><s>2500Fcfa</s></p>
+          </div>
+          <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+        </div>
+      </div>
+      <div class="contenu">
+        <div class="image">
+          <img src="asset/images/image/legume/carrote.jpg" alt="">
+          <div class="show">
+            <a href=""><button><i class="far fa-heart"></i></button></a>
+            <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+          </div>
+        </div>
+        <div class="description">
+          <h4>Carotte 5g</h4>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </span>
+          <p>Cameroun</p>
+          <div class="price">
+            <p>500Fcfa</p>
+            <p><s>700Fcfa</s></p>
+          </div>
+          <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+        </div>
+      </div>
+      <div class="contenu">
+        <div class="image">
+          <img src="asset/images/image/salade/salade 8.png" alt="">
+          <div class="show">
+            <a href=""><button><i class="far fa-heart"></i></button></a>
+            <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+          </div>
+        </div>
+        <div class="description">
+          <h4>Salade de fruit 2g</h4>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </span>
+          <p>France</p>
+          <div class="price">
+            <p>2500Fcfa</p>
+            <p><s>3500Fcfa</s></p>
+          </div>
+          <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+        </div>
+      </div>
+      <div class="contenu">
+        <div class="image">
+          <img src="asset/images/image/fruit/goyage rouge.jpg" alt="">
+          <div class="show">
+            <a href=""><button><i class="far fa-heart"></i></button></a>
+            <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+          </div>
+        </div>
+        <div class="description">
+          <h4>Goyave rouge 2g</h4>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </span>
+          <p>Republique du congo</p>
+          <div class="price">
+            <p>250Fcfa</p>
+            <p><s>350Fcfa</s></p>
+          </div>
+          <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+        </div>
+      </div>
+      <div class="contenu">
+        <div class="image">
+          <img src="asset/images/image/fruit/mangue.avif" alt="">
+          <div class="show">
+            <a href=""><button><i class="far fa-heart"></i></button></a>
+            <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+          </div>
+        </div>
+        <div class="description">
+          <h4>Mangue 25g</h4>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </span>
+          <p>Congo</p>
+          <div class="price">
+            <p>2500Fcfa</p>
+            <p><s>3500Fcfa</s></p>
+          </div>
+          <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+        </div>
+      </div>
+      <div class="contenu">
+        <div class="image">
+          <img src="asset/images/image/fruit/avocat.jpg" alt="">
+          <div class="show">
+            <a href=""><button><i class="far fa-heart"></i></button></a>
+            <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+          </div>
+        </div>
+        <div class="description">
+          <h4>Avocat 5g</h4>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </span>
+          <p>Cameroun</p>
+          <div class="price">
+            <p>1500Fcfa</p>
+            <p><s>3500Fcfa</s></p>
+          </div>
+          <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+        </div>
+      </div>
+      <div class="contenu">
+        <div class="image">
+          <img src="asset/images/image/legume/celeri.jpg" alt="">
+          <div class="show">
+            <a href=""><button><i class="far fa-heart"></i></button></a>
+            <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+          </div>
+        </div>
+        <div class="description">
+          <h4>Céleri 2g</h4>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </span>
+          <p>Cameroun</p>
+          <div class="price">
+            <p>200Fcfa</p>
+            <p><s>300Fcfa</s></p>
+          </div>
+          <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+        </div>
+      </div>
+      <div class="contenu">
+        <div class="image">
+          <img src="asset/images/image/legume/laitue.jpg" alt="">
+          <div class="show">
+            <a href=""><button><i class="far fa-heart"></i></button></a>
+            <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+          </div>
+        </div>
+        <div class="description">
+          <h4>Laitue 2g</h4>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </span>
+          <p>France</p>
+          <div class="price">
+            <p>100Fcfa</p>
+            <p><s>150Fcfa</s></p>
+          </div>
+          <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="title">
+      <h3>Produits phares de la semaine</h3>
+    </div>
+
+    <div class="phare">
+      <div class="presentation">
+        <h3>Apportez un peu de nature à vous</h3>
+        <button>Acheter maintenant <i class="fa fa-arrow-right"></i></button>
+      </div>
+      <div class="produits">
+        <div class="contenu active">
+          <div class="image">
+            <img src="asset/images/image/fruit/Guanabana.jpg" alt="">
+            <div class="show">
+              <a href=""><button><i class="far fa-heart"></i></button></a>
+              <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+            </div>
+          </div>
+          <div class="description">
+            <h4>Guanabana</h4>
+            <span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+            <p>Congo</p>
+            <div class="price">
+              <p>2000Fcfa</p>
+              <p><s>3000Fcfa</s></p>
+            </div>
+            <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+          </div>
+        </div>
+        <div class="contenu active ">
+          <div class="image">
+            <img src="asset/images/image/fruit/passion.jpg" alt="">
+            <div class="show">
+              <a href=""><button><i class="far fa-heart"></i></button></a>
+              <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+            </div>
+          </div>
+          <div class="description">
+            <h4>la passion</h4>
+            <span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+            <p>RDC</p>
+            <div class="price">
+              <p>1500Fcfa</p>
+              <p><s>2500Fcfa</s></p>
+            </div>
+            <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+          </div>
+        </div>
+        <div class="contenu active ">
+          <div class="image">
+            <img src="asset/images/image/legume/poirreau.jpg" alt="">
+            <div class="show">
+              <a href=""><button><i class="far fa-heart"></i></button></a>
+              <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+            </div>
+          </div>
+          <div class="description">
+            <h4>Poirreau 100g</h4>
+            <span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+            <p>cameroun</p>
+            <div class="price">
+              <p>2000Fcfa</p>
+              <p><s>3000Fcfa</s></p>
+            </div>
+            <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+          </div>
+        </div>
+        <div class="contenu">
+          <div class="image">
+            <img src="asset/images/image/fruit/nectarine.gif">
+            <div class="show">
+              <a href=""><button><i class="far fa-heart"></i></button></a>
+              <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+            </div>
+          </div>
+          <div class="description">
+            <h4>Nectarine 100g</h4>
+            <span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+            <p>France</p>
+            <div class="price">
+              <p>2000Fcfa</p>
+              <p><s>3000Fcfa</s></p>
+            </div>
+            <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+          </div>
+        </div>
+        <div class="contenu">
+          <div class="image">
+            <img src="asset/images/image/legume/pois.jpg" alt="">
+            <div class="show">
+              <a href=""><button><i class="far fa-heart"></i></button></a>
+              <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+            </div>
+          </div>
+          <div class="description">
+            <h4>Pois 1kg</h4>
+            <span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+            <p>Belgique</p>
+            <div class="price">
+              <p>2000Fcfa</p>
+              <p><s>3000Fcfa</s></p>
+            </div>
+            <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+          </div>
+        </div>
+        <div class="contenu">
+          <div class="image">
+            <img src="asset/images/image/salade/salade 4.jpeg" alt="">
+            <div class="show">
+              <a href=""><button><i class="far fa-heart"></i></button></a>
+              <a href="html/users/produit.html"><button><i class="far fa-eye"></i></button></a>
+            </div>
+          </div>
+          <div class="description">
+            <h4>Salade de fruit</h4>
+            <span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+            <p>Australie</p>
+            <div class="price">
+              <p>2000Fcfa</p>
+              <p><s>3000Fcfa</s></p>
+            </div>
+            <button><i class="fas fa-shopping-cart"></i> Ajouter</button>
+          </div>
+        </div>
+        <div class="action">
+          <button id="reculer"><i class="fa fa-arrow-left"></i></button>
+          <button id="avancer"><i class="fa fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="small">
+      <div class="article">
+        <div class="titre">
+          <h4>Plus vendus</h4>
+        </div>
+        <div class="bar">
+          <div class="souligner"></div>
+        </div>
+        <div class="contient">
+          <div class="contenance">
+            <div class="image">
+              <img src="asset/images/image/legume/tomate.jpg" alt="">
+            </div>
+            <div class="description">
+              <h4>Tomate 300g</h4>
+              <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="price">
+                <p>300Fcfa</p>
+                <p><s>450Fcfa</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="contenance">
+            <div class="image">
+              <img src="asset/images/image/legume/asperge.jpg" alt="">
+            </div>
+            <div class="description">
+              <h4>Asperge</h4>
+              <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="price">
+                <p>300Fcfa</p>
+                <p><s>450Fcfa</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="contenance">
+            <div class="image">
+              <img src="asset/images/image/fruit/ananas.avif" alt="">
+            </div>
+            <div class="description">
+              <h4>Ananas</h4>
+              <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="price">
+                <p>1000Fcfa</p>
+                <p><s>2500Fcfa</s></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <div class="titre">
+          <h4>Plus populaires</h4>
+        </div>
+        <div class="bar">
+          <div class="souligner"></div>
+        </div>
+        <div class="contient">
+          <div class="contenance">
+            <div class="image">
+              <img src="asset/images/image/salade/salade 8.png" alt="">
+            </div>
+            <div class="description">
+              <h4>Salade de fruit</h4>
+              <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="price">
+                <p>3000Fcfa</p>
+                <p><s>45000Fcfa</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="contenance">
+            <div class="image">
+              <img src="asset/images/image/fruit/mangue.avif" alt="">
+            </div>
+            <div class="description">
+              <h4>Mangue</h4>
+              <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="price">
+                <p>3000Fcfa</p>
+                <p><s>4000Fcfa</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="contenance">
+            <div class="image">
+              <img src="asset/images/image/fruit/avocat.jpg" alt="">
+            </div>
+            <div class="description">
+              <h4>Avocat</h4>
+              <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="price">
+                <p>300Fcfa</p>
+                <p><s>450Fcfa</s></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <div class="titre">
+          <h4>Plus aimer</h4>
+        </div>
+        <div class="bar">
+          <div class="souligner"></div>
+        </div>
+        <div class="contient">
+          <div class="contenance">
+            <div class="image">
+              <img src="asset/images/image/legume/oignon.jpg" alt="">
+            </div>
+            <div class="description">
+              <h4>Oignon</h4>
+              <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="price">
+                <p>300Fcfa</p>
+                <p><s>350Fcfa</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="contenance">
+            <div class="image">
+              <img src="asset/images/image/legume/laitue.jpg" alt="">
+            </div>
+            <div class="description">
+              <h4>Laitue</h4>
+              <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="price">
+                <p>300Fcfa</p>
+                <p><s>450Fcfa</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="contenance">
+            <div class="image">
+              <img src="asset/images/image/fruit/coco.jpg" alt="">
+            </div>
+            <div class="description">
+              <h4>Noix de coco</h4>
+              <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="price">
+                <p>3000Fcfa</p>
+                <p><s>45000Fcfa</s></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <div class="titre">
+          <h4>Pour vous</h4>
+        </div>
+        <div class="bar">
+          <div class="souligner"></div>
+        </div>
+        <div class="contient">
+          <div class="contenance">
+            <div class="image">
+              <img src="asset/images/image/fruit/fraise.jpg" alt="">
+            </div>
+            <div class="description">
+              <h4>Fraise</h4>
+              <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="price">
+                <p>3000Fcfa</p>
+                <p><s>3500Fcfa</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="contenance">
+            <div class="image">
+              <img src="asset/images/image/fruit/grenade.jpg" alt="">
+            </div>
+            <div class="description">
+              <h4>Grenade</h4>
+              <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="price">
+                <p>3000Fcfa</p>
+                <p><s>4500Fcfa</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="contenance">
+            <div class="image">
+              <img src="asset/images/image/fruit/kiwi.jpg" alt="">
+            </div>
+            <div class="description">
+              <h4>Kiwi</h4>
+              <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="price">
+                <p>3000Fcfa</p>
+                <p><s>4500Fcfa</s></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conclusion">
+      <div class="element">
+        <h2>Profitez du confort de votre maison et commandez vos nécessités chez nous</h2>
+        <p>Commencer votre journée de shopping avec Nest Mark</p>
+      </div>
+      <div class="input">
+        <input type="text" placeholder="Votre adresse email">
+        <button>subscrire</button>
+      </div>
+    </div>
+
+    <div class="order">
+      <div class="liens">
+        <div class="image">
+          <img src="asset/images/istockphoto-478678839-612x612.jpg" alt="">
+        </div>
+        <div class="text">
+          <h4>Meilleurs</h4>
+          <p>Produits de qualité</p>
+        </div>
+      </div>
+      <div class="liens">
+        <div class="image">
+          <img src="asset/images/istockphoto-478678839-612x612.jpg" alt="">
+        </div>
+        <div class="text">
+          <h4>Disponibilité</h4>
+          <p>Toujours disponible</p>
+        </div>
+      </div>
+      <div class="liens">
+        <div class="image">
+          <img src="asset/images/istockphoto-478678839-612x612.jpg" alt="">
+        </div>
+        <div class="text">
+          <h4>Fiabilité</h4>
+          <p>Pas d'arnaque</p>
+        </div>
+      </div>
+      <div class="liens">
+        <div class="image">
+          <img src="asset/images/istockphoto-478678839-612x612.jpg" alt="">
+        </div>
+        <div class="text">
+          <h4>Diversifié</h4>
+          <p>Produits du monde</p>
+        </div>
+      </div>
+      <div class="liens">
+        <div class="image">
+          <img src="asset/images/istockphoto-478678839-612x612.jpg" alt="">
+        </div>
+        <div class="text">
+          <h4>Goût</h4>
+          <p>Excellent goût très délicieux</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <h3>Nest</h3>
+        <p class="subri">fruitag & cmo</p>
+        <ul>
+          <li><i class="fas fa-map-marker"></i>Adress 6757 Yassa Douala Cameroun city </li>
+          <li><i class="fas fa-phone"></i>Contact: +237 659194047</li>
+          <li><i class="far fa-envelope"></i>Email: mhbbayihe12@gmail!.com</li>
+          <li><i class="far fa-clock"></i>Hours: 10h00 - 18h00, lun -  sam</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Liens</h4>
+        <ul>
+          <li>Accueil </li>
+          <li>A propos</li>
+          <li>Blog</li>
+          <li>Fruits</li>
+          <li>Légumes</li>
+          <li>Salade</li>
+          <li>Page</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Partenaire</h4>
+        <ul>
+          <li>ENSPD</li>
+          <li>Quantum software</li>
+          <li>MTN Cameroun</li>
+          <li>Orange Cameroun</li>
+          <li>Techo</li>
+          <li>Tangui</li>
+          <li>Source du pays</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Supers marchées</h4>
+        <ul>
+          <li>Sakers</li>
+          <li>Santa lucia</li>
+          <li>Malangue</li>
+          <li>Zapo</li>
+          <li>Elovan</li>
+          <li>Carrefour</li>
+          <li>Exola</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Villes</h4>
+        <ul>
+          <li>Douala</li>
+          <li>Paris</li>
+          <li>Yaoundé</li>
+          <li>New York</li>
+          <li>Los angeles</li>
+          <li>Bertoua</li>
+          <li>ngaoundere</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Installer App</h4>
+        <p>Par Google Play store ou Itume</p>
+      </div>
+    </footer>
+    <hr>
+
+    <div class="footer">
+      <div>
+        &copy; 2025 Ecole nationale superieur polytechnique de Douala
+      </div>
+      <div>
+        <i class="fa fa-headphones ico" aria-hidden="true"></i>
+        <div>
+          <h4>+237 659194047</h4>
+          <p>24/7 Service client</p>
+        </div>
+      </div>
+      <div>
+        <i class="fa fa-headphones ico" aria-hidden="true"></i>
+        <div>
+          <h4>+237 659194047</h4>
+          <p>24/7 Service client</p>
+        </div>
+      </div>
+      <div>
+        Folows Us: <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- ...............sidebar...................... -->
+   <div class="sidebar">
+    <button id="fermer_sidebar">&times;</button>
+    <div class="liens">
+      <h4>Liens</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="fruits.html">Fruits</a></li>
+        <li><a href="legume.html">Légumes</a></li>
+        <li><a href="propos.html">A propos</a></li>
+        <li>boutique</li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </div>
+    <div class="indiv">
+      <h4>Compte</h4>
+      <ul>
+        <li><a href=""><i class="fas fa-random    "></i><sup>3</sup><span>Compare</span></a></li>
+        <li><a href=""><i class="far fa-heart"></i><sup>3</sup><span>Favoris</span></a></li>
+      </ul>
+    </div>
+   </div>
+  <!-- ...............sidebar...................... -->
+
+  <!-- ........connexion modal.......  -->
+  <div class="connexion">
+    <div class="card-connexion">
+      <button class="close" id="close-connection">&times;</button>
+      <a href="html/users/login.html"><button class="button">Connexion</button></a>
+      <p>Compte Administateur</p>
+      <a href="html/admin/login.html"><button class="button">Connexion</button></a>
+    </div>
+  </div>
+  <!-- ........modal connnexion.......  -->
+  <script src="asset/js/user/carrousel.js"></script>
+  <script src="asset/js/user/index.js"></script>
+</body>
+</html>
